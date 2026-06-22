@@ -3,7 +3,7 @@
 
 > Eigenständig formulierte Zusammenfassung der BA-Grundlagen.
 > Quellen: Industry-standard BA-Konzepte (Jeremy Aschenbrenner / TheBAGuide.com, Udemy).
-> Erstellt: 2026-06-22
+> Erstellt: 2026-06-22 · Erweitert: 2026-06-22 (Business Case, Use Cases, detailliertes BRD-Template, BA Key Skills)
 
 ---
 
@@ -21,8 +21,10 @@
 10. [Elicitation-Techniken](#10-elicitation-techniken)
 11. [SDLC-Methoden](#11-sdlc-methoden)
 12. [BA-Glossar](#12-ba-glossar)
-13. [BA Skills Self-Assessment](#13-ba-skills-self-assessment)
-14. [Feature-Mapping: App-Features aus der Wissensbasis](#14-feature-mapping-app-features-aus-der-wissensbasis)
+13. [BA Skills Self-Assessment & BA Key Skills](#13-ba-skills-self-assessment--ba-key-skills)
+14. [Der Business Case](#14-der-business-case)
+15. [Use-Case-Spezifikation](#15-use-case-spezifikation)
+16. [Feature-Mapping: App-Features aus der Wissensbasis](#16-feature-mapping-app-features-aus-der-wissensbasis)
 
 ---
 
@@ -152,6 +154,18 @@ Jede Anforderung sollte dem SMART-Prinzip genügen, um testbar und umsetzbar zu 
 | **A** | Attainable | Erreichbar — technisch und wirtschaftlich umsetzbar |
 | **R** | Reasonable | Vernünftig/sinnvoll — im Kontext des Projekts und Geschäftsziels relevant |
 | **T** | Traceable | Rückverfolgbar — von der Geschäftsanforderung bis zum Test nachvollziehbar |
+
+### SMART-Checklist im Detail (Fragen + Leitlinien)
+
+Diese Matrix dient als Grundlage für den automatisierten SMART-Checker (siehe Feature-Mapping).
+
+| Kriterium | Beschreibung | Prüffragen | Leitlinien |
+|-----------|-------------|-----------|-----------|
+| **Specific** | Klar, konsistent, einfach; nicht mehrdeutig | Was? Warum? Wer? Wo? | Vage Wörter wie "einige", "viele", "mehrere" vermeiden · Werte mit Labels versehen · Bilder/Visualisierungen nutzen |
+| **Measurable** | Fortschritt zum Ziel messbar, Indikatoren quantifizierbar | Wie viel? Wie viele? Woran erkenne ich, dass es erreicht ist? | Messbarkeit bereits bei der Erhebung sicherstellen · Tests zur Verifikation definieren · Eindeutigen Erfolg validieren und belegen |
+| **Attainable** | Anforderung ist machbar/erreichbar | Gibt es eine theoretische Lösung? Wurde es schon einmal gemacht? Sind die Constraints bekannt? | Ausreichend Zeit, Ressourcen, Budget sicherstellen · Genügend Wissen/Erfahrung validieren · Komponenten und Learnings aus früheren Projekten wiederverwenden |
+| **Reasonable** | Aufwand lohnt sich; positiver Return on Investment | Ist es lohnenswert? Stimmt das Timing? Passt es zu unseren Zielen und Bedürfnissen? | Jede Anforderung einem Sanity-Check unterziehen · Sicherstellen, dass die Anforderung im Kontext sinnvoll ist |
+| **Traceable** | Anforderung vom Ursprung über Design bis in die Umsetzung verfolgbar | Wie kann ich verifizieren, dass die Anforderung berücksichtigt wurde? Habe ich die wichtigen Daten dazu erfasst? | Erfassen: Originator (Quelle), Assumptions, Business-Begründung, Dependencies, Importance |
 
 ### Häufige Verstöße gegen SMART
 
@@ -347,6 +361,105 @@ Das BRD ist das zentrale Lieferobjekt des BA — die formelle Dokumentation alle
 - **Klarheit:** Jede Anforderung ist eindeutig interpretierbar
 - **Testbarkeit:** Jede Anforderung hat Akzeptanzkriterien
 - **Rückverfolgbarkeit:** Jede Anforderung ist auf eine Business-Quelle rückführbar
+
+### Detailliertes BRD-Template (Praxisstandard)
+
+Ein professionelles BRD enthält mehr als nur die Anforderungsliste. Vollständige Struktur:
+
+```
+TITELSEITE
+  - Projektnummer, Projektname
+  - Version (N.N), Datum (YYYY-MM-DD)
+
+VERSION & APPROVALS
+  - Version History (Version# | Datum | Revised By | Reason for change)
+  - Approval-Statement: Dieses Dokument wurde als offizielles BRD
+    genehmigt. Nach Freigabe werden Änderungen über den Change-
+    Management-Prozess gesteuert (Impact-Analyse, Reviews, Approvals).
+  - Document Approvals (Approver Name | Project Role | Signature | Datum)
+
+1. PROJECT DETAILS
+   - Project Name, Project Type (z.B. New Initiative / Phase II)
+   - Start Date, End Date, Project Sponsor
+   - Primary Driver (z.B. Mandatory / Efficiency), Secondary Driver
+   - Division, Project Manager
+
+2. OVERVIEW
+   Dieses Dokument dient als Basis für:
+   - Erstellung von Lösungsdesigns
+   - Entwicklung von Testplänen, -skripten und -fällen
+   - Bestimmung des Projektabschlusses
+   - Bewertung des Projekterfolgs
+
+3. DOCUMENT RESOURCES (Stakeholder Map)
+   - Name | Business Unit | Role
+   - Alle an der Anforderungserhebung beteiligten Personen
+
+4. GLOSSARY OF TERMS
+   - Term/Acronym | Definition
+
+5. PROJECT OVERVIEW
+   5.1 Overview & Background (Vision Statement — jede Anforderung
+       bringt das Projekt näher an diese Vision)
+   5.2 Project Dependencies (verwandte/abhängige Projekte)
+   5.3 Stakeholders (interne + externe)
+
+6. KEY ASSUMPTIONS & CONSTRAINTS
+   - Assumptions (Annahmen, auf denen die Anforderungen basieren)
+   - Constraints (Beschränkungen)
+
+7. (OPTIONAL) USE CASES
+   - Use Case Diagram (UML)
+   - Use Case Narratives (siehe Kap. 15)
+
+8. BUSINESS REQUIREMENTS (nach Kategorien gegliedert)
+   - General / Base
+   - Security
+   - Reporting
+   - Usability
+   - Audit
+   Spalten je Anforderung: REQ# | PRIORITY | DESCRIPTION | RATIONALE | USE CASE
+
+APPENDICES
+   - Appendix A: Business Process Flows (AS-IS / TO-BE Diagramme)
+   - Appendix B: Business Rules Catalog
+   - Appendix C: Models
+```
+
+### Prioritäts-Rating-Schema (BRD-Standard)
+
+Im BRD werden Anforderungen mit einem 5-stufigen Rating priorisiert:
+
+| Wert | Rating | Beschreibung |
+|------|--------|-------------|
+| 1 | **Critical** | Kritisch für den Projekterfolg. Ohne diese Anforderung ist das Projekt nicht möglich. |
+| 2 | **High** | Hohe Priorität, aber das Projekt kann als Minimalversion ohne sie umgesetzt werden. |
+| 3 | **Medium** | Einigermaßen wichtig — bringt Mehrwert, aber das Projekt kann ohne sie fortfahren. |
+| 4 | **Low** | Niedrige Priorität, "nice to have", falls Zeit und Budget es zulassen. |
+| 5 | **Future** | Out of Scope für dieses Projekt, für ein mögliches künftiges Release notiert. |
+
+### Anforderungs-Tabellenzeile (Beispiel)
+
+| REQ# | PRIORITY | DESCRIPTION | RATIONALE | USE CASE |
+|------|----------|-------------|-----------|----------|
+| GEN-01 | 1 (Critical) | Das System muss bis zu 100 gleichzeitige Nutzer unterstützen. | Daten zeigen Spitzen von 45 gleichzeitigen Nutzern; Puffer für Wachstum nötig. | UC-3 |
+
+> Anders als die SMART-Attributliste in Kap. 5 ist dies das **kompakte BRD-Tabellenformat**: Jede Anforderung trägt eine ID, eine Priorität (1-5), die Beschreibung, eine **Rationale** (Begründung — wichtig für Traceability) und eine Verknüpfung zum Use Case.
+
+### Business Rules Catalog (Appendix-Template)
+
+Jede Business Rule wird im BRD-Anhang nach diesem Schema dokumentiert:
+
+```
+Business Rule Name:  Aussagekräftiger Name zum Thema der Regel
+Identifier:          Eindeutige ID, z.B. BR1
+Description:         Die Regel im Detail
+                     Beispiel: "Alle Arbeitsleistungen werden in
+                     15-Minuten-Schritten erfasst, gemeldet und abgerechnet."
+Example:             (optional) Ein Beispiel für die Regel
+Source:              Quelle der Regel, z.B. Stakeholder
+Related Rules:       Liste verwandter Regeln (für Traceability)
+```
 
 ---
 
@@ -810,9 +923,34 @@ Wichtige Begriffe im Business Analysis Umfeld:
 
 ---
 
-## 13. BA Skills Self-Assessment
+## 13. BA Skills Self-Assessment & BA Key Skills
 
 Ein BA benötigt Kompetenzen in mehreren Dimensionen. Das folgende Framework ermöglicht eine strukturierte Selbstbewertung.
+
+### Die 6 Kern-Skills eines Business Analysts
+
+| Skill | Bedeutung |
+|-------|-----------|
+| **Communication** | Schriftliche und mündliche Kommunikation sind essenziell. Der BA ist im Kern ein professioneller Kommunikator, der die Lücke zwischen Business- und Technik-Teams überbrückt. |
+| **Negotiation** | Nicht alle Stakeholder sind einer Meinung. Der BA verhandelt zwischen den Positionen und führt sie zu einer einvernehmlichen Lösung. |
+| **Problem Solving** | Kein Projekt ist ohne Probleme. Der BA definiert das Problem und erarbeitet mögliche Lösungen. |
+| **Facilitation** | Meetings sind fester Bestandteil der Unternehmenskultur. Der BA muss Diskussionen angemessen moderieren, in Meetings präsentieren und Telefonkonferenzen effektiv leiten können. |
+| **Organization** | Der BA muss organisiert sein und referenzierbare Notizen aus verschiedenen Meetings und Gesprächen führen. |
+| **Critical Thinking** | Der BA muss viele Optionen analysieren und sicherstellen, dass die finale Lösung alle Stakeholder-Bedürfnisse und Anforderungen erfüllt. |
+
+### Weitere wertvolle Skills
+
+Viele BA-Rollen nutzen zusätzlich:
+
+- **Decision-making:** Informationen nutzen, um nach Abwägung mehrerer Alternativen entschlossen zu entscheiden
+- **Technical aptitude:** Hohe Vertrautheit mit verschiedenen Technologien und die Fähigkeit, neue Software schnell zu erlernen
+- **Documentation:** Klare, präzise Dokumentation schreiben, die exakt wiedergibt, was besprochen oder gelernt wurde
+- **Visual modeling:** Komplexe Gedanken und Prozesse visuell in Diagrammen und Modellen darstellen (Prozessflüsse, Wireframes, Use Cases)
+- **Relationship-building:** Starke, positive Beziehungen zu Menschen auf allen Ebenen der Organisation aufbauen und pflegen (Nutzer, Manager, Führungskräfte)
+- **Self-managing:** Aufgaben, Projekte und Deadlines eigenständig und proaktiv managen — das Richtige tun, auch wenn niemand zusieht
+- **Thick skin** (kein Skill im engeren Sinn, aber wichtig): Feedback annehmen können, ohne defensiv zu werden oder es persönlich zu nehmen
+
+> Die folgenden 7 Assessment-Dimensionen sind eine analytische Gruppierung dieser Skills für die strukturierte Selbstbewertung.
 
 ### Kompetenz-Dimensionen
 
@@ -914,7 +1052,108 @@ Priorität für BA-Einsteiger:
 
 ---
 
-## 14. Feature-Mapping: App-Features aus der Wissensbasis
+## 14. Der Business Case
+
+Der Business Case ist das Dokument, das **vor** Projektstart die geschäftliche Rechtfertigung liefert: Warum sollte das Unternehmen Geld und Zeit investieren? Er beantwortet die Frage "Lohnt sich dieses Projekt?" mit Zahlen und Fakten und dient dem Management als Entscheidungsgrundlage (Go / No-Go).
+
+### Struktur eines Business Case
+
+| Abschnitt | Inhalt |
+|-----------|--------|
+| **1. Executive Summary** | Kurze Zusammenfassung des gesamten Business Case: Problem, Synopse der Analyse, empfohlene Lösung. Wird in der Regel **zuletzt** geschrieben, da sie die anderen Abschnitte verdichtet. |
+| **2. Problem Statement** | Klare, prägnante Beschreibung der Chance oder des Problems, das adressiert wird. |
+| **3. Analysis** | Beschreibt das Was, Warum und Wie des potenziellen Projekts. Definiert das Problem/die Chance vollständig und wie es entstanden ist. Erklärt, was passiert, wenn nichts getan wird. Beschreibt benötigte Ressourcen, Budget und Zeitrahmen. |
+| **4. Solution Options** | Auflistung der untersuchten Top-Lösungen mit Kurzbeschreibung sowie Pros und Cons jeder Option. **Eine Option muss immer "Nichts tun" (Do Nothing) sein.** |
+| **5. Cost-Benefit Analysis** | Bewertet Kosten und Nutzen jeder Lösungsoption. Enthält den erwarteten finanziellen Nutzen und den Zeitrahmen bis zum Return on Investment. Kann mit "Solution Options" kombiniert werden. |
+| **6. Recommendation** | Begründet die Empfehlung und wie sie zustande kam. Dieser Abschnitt "verkauft" das Projekt. Kann Hinweise zur Durchführung enthalten (Methodik, Ressourcen, Zeitrahmen). |
+
+### Finanzkennzahlen der Cost-Benefit-Analyse
+
+| Kennzahl | Bedeutung |
+|----------|-----------|
+| **Payback Period** | Zeitraum (in Jahren), bis die Investition durch Einsparungen/Erträge wieder eingespielt ist. |
+| **ROI (Return on Investment)** | Prozentuales Verhältnis von Netto-Gewinn zu Investitionskosten. |
+| **NPV (Net Present Value)** | Barwert aller zukünftigen Cashflows abzüglich der Investition — berücksichtigt den Zeitwert des Geldes. |
+
+### Praxisbeispiel: Doughlicious Pastry (Liefer-Tracking)
+
+Ein durchgängiges Beispiel zeigt, wie ein Business Case argumentiert:
+
+**Problem:** Eine Bäckerei verlor über 6 Monate ~22.000 $ Umsatz; Kundenzufriedenheit sank von 4,7 auf 4,2 (von 5). Über 75 % der unzufriedenen Kunden nannten den neuen Lieferprozess als Ursache (38 % verspätet, 31 % nie angekommen, 27 % falsche Rechnung).
+
+**Root Cause:** Ein manueller, undokumentierter Lieferprozess (Zettel werden ausgedruckt, handschriftlich ergänzt, an eine Pinnwand geheftet) — fehleranfällig, nicht nachverfolgbar, keine Reports.
+
+**Lösungsoptionen (jeweils mit Pros/Cons):**
+1. *Do Nothing* — geschätzter Verlust 40.000 $+ pro Jahr; Firma in 7 Jahren unprofitabel.
+2. *Bestehendes System modifizieren* — Eigenentwicklung über Contractor; löst die meisten Probleme, aber 6-8 Monate, hohe Vorabkosten.
+3. *Off-the-shelf Delivery Tracking Software (SaaS)* — in 1-2 Monaten einsatzbereit, niedrige Vorabkosten, kostenlose Updates; aber Doppelerfassung, laufende Lizenzkosten.
+4. *Lieferprozess entfernen* — würde Kunden zur Konkurrenz treiben (14 % im Jahr 1, 22 % im Jahr 2); in 2 Jahren unprofitabel.
+
+**Cost-Benefit (Auszug):**
+- Option 2: Payback 3,16 Jahre · ROI 39,49 % · NPV 48.390 $
+- Option 3: Payback 3,27 Jahre · ROI 87 %+ · NPV 52.361 $
+
+**Empfehlung:** Option 3 (SaaS-Lösung) — niedrigste Anfangsinvestition (15.760 $, wichtig bei knappem Cashflow), geringeres Risiko (fertig getestet), schnelle Implementierung, in-house wartbar, automatische Feature-Upgrades.
+
+**Lehre aus dem Beispiel:** Ein überzeugender Business Case verknüpft das Problem mit *quantifizierten* Auswirkungen, stellt mehrere Optionen (inkl. "Nichts tun") gegenüber, untermauert sie mit Finanzkennzahlen und leitet daraus eine klar begründete Empfehlung ab — passend zur konkreten Situation (hier: Cashflow-Knappheit als ausschlaggebendes Kriterium).
+
+---
+
+## 15. Use-Case-Spezifikation
+
+Ein Use Case erfasst das benötigte Systemverhalten aus Sicht des Endnutzers beim Erreichen eines oder mehrerer Ziele. Er beschreibt den Ablauf der Interaktion zwischen Akteuren und dem System und kann zusätzlich visuell (UML-Use-Case-Diagramm) dargestellt werden.
+
+### Use-Case-Narrative — Template
+
+| Feld | Definition |
+|------|-----------|
+| **Use Case ID** | Eindeutige numerische ID in hierarchischer Form (X.Y). Verwandte Use Cases lassen sich gruppieren. Funktionale Anforderungen können auf einen Use Case zurückverfolgt werden. |
+| **Use Case Name** | Prägnanter, ergebnisorientierter Name. Spiegelt die Aufgabe wider, die der Nutzer erledigen will. Enthält Verb + Nomen (z.B. "Bestellung aufgeben", "Kampus-Karte ansehen"). |
+| **Created By / Date Created** | Ersteller und Erstellungsdatum. |
+| **Last Updated By / Date Last Updated** | Letzte Änderung und Datum. |
+| **Actors** | Person oder externe Entität, die mit dem System interagiert und Use Cases ausführt. Verschiedene Akteure entsprechen oft verschiedenen Nutzerrollen. |
+| **Description** | Kurze Beschreibung von Grund und Ergebnis des Use Case bzw. High-Level-Ablauf. |
+| **Preconditions** | Bedingungen, die vor Start erfüllt sein müssen (nummeriert). Beispiel: "Nutzeridentität ist authentifiziert." |
+| **Postconditions** | Zustand des Systems nach Ausführung (nummeriert). Beispiel: "Preis in der Datenbank wurde aktualisiert." |
+| **Normal Course** | Detaillierter Ablauf der Nutzeraktionen und Systemantworten unter normalen Bedingungen. Als nummerierte Liste (Aktion des Akteurs ↔ Antwort des Systems). |
+| **Alternative Courses** | Andere legitime Nutzungsszenarien. Nummerierung mit Use-Case-ID als Präfix + "AC" (z.B. X.Y.AC.1). |
+| **Exceptions** | Erwartete Fehlerzustände und Systemreaktion. Nummerierung mit "EX" (z.B. X.Y.EX.1). |
+| **Includes** | Andere Use Cases, die von diesem aufgerufen ("included") werden. Gemeinsame Funktionalität wird ausgelagert. |
+| **Priority** | Relative Priorität der Umsetzung — gleiches Schema wie im BRD (1-5). |
+| **Frequency of Use** | Geschätzte Häufigkeit der Ausführung pro Zeiteinheit. |
+| **Business Rules** | Business Rules, die diesen Use Case beeinflussen. |
+| **Special Requirements** | Zusätzliche (oft nicht-funktionale) Anforderungen, z.B. Performance, Verfügbarkeit. |
+| **Assumptions** | Annahmen, die zur Aufnahme dieses Use Case führten. |
+| **Notes and Issues** | Offene Punkte/TBDs mit Verantwortlichem, Fälligkeit und Auflösung. |
+
+### Beispiel: ausgefüllter Use Case
+
+```
+Use Case ID:        1
+Use Case Name:      Interaktive Kampus-Karte ansehen
+Actors:             User
+Description:        Beschreibt die Hauptnutzung der interaktiven Kampus-
+                    Karte als Web-Browser-Anwendung. Der Nutzer ruft die
+                    URL auf und interagiert mit der Funktionalität.
+Preconditions:      Browser geöffnet, Karten-URL aufgerufen.
+Postconditions:     Nutzer navigiert von der Karten-Website weg.
+Normal Course:      1. Browser öffnen
+                    2. Zur Karten-URL navigieren
+                    3. Mit der Karte über verfügbare Funktionen interagieren
+Alternative Courses: Keine
+Exceptions:         Keine
+Priority:           High
+Frequency of Use:   Einmal pro Besuch
+Special Requirements: 24/7-Zugriff; Antwortzeiten vergleichbar mit gängigen
+                    Web-Kartendiensten (z.B. Google Maps); Accessibility-
+                    und eCommunications-Vorgaben
+```
+
+> **Traceability-Hinweis:** Funktionale Anforderungen werden auf Use Cases zurückgeführt (USE-CASE-Spalte im BRD), Use Cases referenzieren Business Rules — so entsteht eine durchgängige Kette von Business Rule → Use Case → Anforderung → Test.
+
+---
+
+## 16. Feature-Mapping: App-Features aus der Wissensbasis
 
 Dieses Kapitel leitet aus der Wissensbasis konkrete Features für die `LeadBusinessAnalyst` Python-App ab.
 
@@ -928,10 +1167,12 @@ Dieses Kapitel leitet aus der Wissensbasis konkrete Features für die `LeadBusin
 | SDLC-Empfehlung | Kap. 11 | MEDIUM | Projektparameter → passende Methode empfehlen |
 | Business Rules Manager | Kap. 8 | MEDIUM | Rules erfassen → Requirements ableiten |
 | BRD-Generator | Kap. 9 | MEDIUM | Aus Daten ein BRD-Dokument generieren |
-| Prioritäts-Wizard | Kap. 6 | MEDIUM | 3-Schritt-Priorisierung mit Scoring |
+| Prioritäts-Wizard | Kap. 6, 9 | MEDIUM | 3-Schritt-Priorisierung + 5-stufiges BRD-Rating |
+| Business-Case-Builder | Kap. 14 | MEDIUM | Business Case mit Optionen + NPV/ROI/Payback erstellen |
+| Use-Case-Editor | Kap. 15 | MEDIUM | Use-Case-Narrative mit Traceability zu Requirements |
 | Glossar & Nachschlagewerk | Kap. 12 | LOW | Integriertes BA-Glossar |
 | Skills Self-Assessment | Kap. 13 | LOW | Interaktive Kompetenzbewertung |
-| Traceability Matrix | Kap. 5 | LOW | Anforderungen ↔ Tests ↔ Business Goals verknüpfen |
+| Traceability Matrix | Kap. 5, 15 | LOW | Business Rule ↔ Use Case ↔ Requirement ↔ Test |
 
 ---
 
@@ -1195,6 +1436,71 @@ class TraceabilityEntry:
 
 ---
 
+### Feature 11: Business-Case-Builder
+
+**Was:** Geführter Workflow zur Erstellung eines vollständigen Business Case inklusive Finanzkennzahlen-Rechner.
+
+**Workflow (6 Schritte gemäß Kap. 14):**
+1. Problem Statement erfassen
+2. Analysis (inkl. "Was passiert bei Nichtstun?")
+3. Solution Options sammeln — App erzwingt eine "Do Nothing"-Option
+4. Cost-Benefit pro Option eingeben → automatische Berechnung
+5. Recommendation formulieren
+6. Executive Summary (zuletzt, optional auto-generiert aus den Abschnitten)
+
+**Finanzrechner:**
+
+```python
+def payback_period(initial_investment: float, annual_net_benefit: float) -> float:
+    return initial_investment / annual_net_benefit  # in Jahren
+
+def roi(net_gain: float, investment_cost: float) -> float:
+    return (net_gain / investment_cost) * 100  # in Prozent
+
+def npv(cashflows: list[float], discount_rate: float) -> float:
+    # cashflows[0] = -Investition (Jahr 0), danach jährliche Netto-Cashflows
+    return sum(cf / (1 + discount_rate) ** year
+              for year, cf in enumerate(cashflows))
+```
+
+**Output:** Strukturiertes Business-Case-Dokument (Markdown/Word/PDF) + Optionen-Vergleichstabelle (Payback / ROI / NPV nebeneinander) zur Entscheidungsunterstützung.
+
+---
+
+### Feature 12: Use-Case-Editor
+
+**Was:** Editor für Use-Case-Narrative nach dem Template aus Kap. 15 mit automatischer Traceability-Verknüpfung.
+
+**Datenmodell:**
+
+```python
+@dataclass
+class UseCase:
+    id: str                      # hierarchisch: "1", "1.2"
+    name: str                    # Verb + Nomen
+    actors: list[str]
+    description: str
+    preconditions: list[str]
+    postconditions: list[str]
+    normal_course: list[str]     # nummerierte Schrittfolge
+    alternative_courses: list[str]   # IDs: X.Y.AC.n
+    exceptions: list[str]            # IDs: X.Y.EX.n
+    includes: list[str]          # IDs anderer Use Cases
+    priority: Priority           # gleiches 1-5 Schema wie BRD
+    frequency_of_use: str
+    business_rules: list[str]    # BR-IDs
+    special_requirements: list[str]
+    linked_requirements: list[str]   # Requirement-IDs (Traceability)
+```
+
+**Features:**
+- Schritt-für-Schritt-Erfassung des Normal Course mit Akteur/System-Wechsel
+- Verknüpfung zu Business Rules und Requirements
+- Optionaler Export als UML-Use-Case-Diagramm (z.B. via plantuml)
+- Speist die USE-CASE-Spalte des BRD-Generators
+
+---
+
 ## Anhang: Schnellreferenz-Karten
 
 ### Anforderungs-Kategorien auf einen Blick
@@ -1242,4 +1548,25 @@ Hohes Risiko, großes Projekt? → Spiral
 Phasenweise Lieferung? → Incremental
 Sehr schnell, UI-intensiv? → RAD
 Requirements sehr unklar? → Prototyping
+```
+
+### Business-Case-Aufbau (Reihenfolge)
+
+```
+1. Problem Statement   (Was ist das Problem/die Chance?)
+2. Analysis            (Was/Warum/Wie + Folgen bei Nichtstun)
+3. Solution Options    (mehrere Optionen, IMMER inkl. "Do Nothing")
+4. Cost-Benefit        (Payback · ROI · NPV pro Option)
+5. Recommendation      (begründete Empfehlung, passend zur Situation)
+6. Executive Summary   (zuletzt schreiben!)
+```
+
+### Prioritäts-Ratings (BRD)
+
+```
+1 Critical → ohne sie kein Projekt
+2 High     → Minimalversion ginge ohne sie
+3 Medium   → Mehrwert, aber verzichtbar
+4 Low      → nice to have
+5 Future   → out of scope, künftiges Release
 ```
