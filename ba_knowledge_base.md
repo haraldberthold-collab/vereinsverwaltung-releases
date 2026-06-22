@@ -883,43 +883,150 @@ Requirements Planning → User Design → Construction → Cutover
 
 ## 12. BA-Glossar
 
-Wichtige Begriffe im Business Analysis Umfeld:
+> **Vollständiges Glossar:** Die Datei `glossary.json` enthält alle **351 BA-Fachbegriffe** mit vollständigen englischen Definitionen — direkt für die App-Glossar-Funktion nutzbar.
+> Dieses Kapitel enthält eine kuratierte Auswahl der wichtigsten ~80 Begriffe auf Deutsch.
+
+### Kern-Begriffe (Requirements & Analysis)
 
 | Begriff | Definition |
 |---------|-----------|
 | **Acceptance Criteria** | Konkrete, messbare Bedingungen, die eine Anforderung erfüllen muss, um als "done" zu gelten |
-| **Assumption** | Annahme, die als wahr gilt, aber noch nicht bestätigt ist |
-| **Baseline** | Festgelegter, freigegebener Stand einer Anforderung oder eines Dokuments — Ausgangspunkt für Änderungen |
-| **Business Case** | Dokumentation des geschäftlichen Nutzens und der Rechtfertigung eines Projekts |
-| **Business Rule** | Richtlinie, die beschreibt, wie das Unternehmen in einer bestimmten Situation handelt (true/false) |
-| **Change Request** | Formeller Antrag zur Änderung einer freigegebenen Anforderung oder eines Deliverables |
+| **Analysis** | Erstellung eines problemunabhängigen Modells — Analysis fokussiert auf das *Was*, Design auf das *Wie* |
+| **Assumption** | Annahme, die als wahr gilt, aber noch nicht bestätigt wurde |
+| **Baseline** | Vereinbarter, freigegebener Stand eines Dokuments/einer Anforderung — Ausgangspunkt für Änderungen |
+| **Business Goal** | Zustand oder Bedingung, den das Unternehmen erfüllen muss, um seine Vision zu erreichen |
+| **Business Needs** | Übergeordnete Geschäftsanforderungen — Aussagen über Geschäftsziele oder gewünschte Auswirkungen |
+| **Business Requirement** | Übergeordnete geschäftliche Begründung, die, wenn adressiert, Umsatz steigert, Kosten senkt, Service verbessert oder regulatorische Anforderungen erfüllt |
+| **Business Rule** | Richtlinie, die beschreibt, wie das Unternehmen in einer Situation handelt (true/false-Constraint) |
 | **Constraint** | Beschränkung, die den Lösungsraum einengt (technisch, zeitlich, budgetär, regulatorisch) |
-| **Deliverable** | Konkretes, lieferbares Ergebnis eines Projekts oder einer Projektphase |
-| **Dependency** | Abhängigkeit zwischen Anforderungen oder Aufgaben — A kann nicht ohne B |
-| **Elicitation** | Prozess der Informationsgewinnung von Stakeholdern und anderen Quellen |
-| **Feasibility** | Machbarkeit — technische, finanzielle und organisatorische Durchführbarkeit |
-| **Functional Requirement** | Anforderung, die beschreibt, was ein System tun soll (beobachtbares Verhalten) |
-| **Gap Analysis** | Vergleich des IST-Zustands mit dem SOLL-Zustand zur Identifikation von Lücken |
-| **In Scope** | Explizit im Projektumfang enthalten |
-| **Issue** | Identifiziertes Problem, das gelöst werden muss |
-| **Iteration** | Zeitlich begrenzter Entwicklungszyklus (synonym zu Sprint in Scrum) |
-| **MoSCoW** | Priorisierungsmethode: Must / Should / Could / Won't Have |
-| **NFR** | Non-Functional Requirement — Qualitätseigenschaften eines Systems |
-| **Out of Scope** | Explizit vom Projekt ausgeschlossen |
-| **Prioritization** | Prozess zur Festlegung der Reihenfolge von Anforderungen nach Geschäftswert |
+| **Deliverable** | Eindeutiges, nachweisbares Arbeitsergebnis oder Lieferobjekt |
+| **Dependency** | Abhängigkeit zwischen Anforderungen oder Aufgaben |
+| **Desired Outcome** | Geschäftlicher Nutzen, der durch Erfüllung des Business Needs entsteht; angestrebter Endzustand |
+| **Elicitation** | Prozess der Informationsgewinnung: Technikauswahl → Durchführung → Dokumentation → Bestätigung |
+| **Feature** | Kohärentes Bündel extern sichtbarer Funktionalität, das auf Geschäftsziele einzahlt |
+| **Functional Requirement** | Beschreibt, was ein System tun soll (beobachtbares Verhalten) |
+| **Gap Analysis** | Vergleich IST- vs. SOLL-Zustand zur Identifikation von Lücken |
+| **Non-Functional Requirement** | Qualitätseigenschaften eines Systems (Usability, Performance, Security, Scalability …) |
+| **Prioritization** | Prozess zur Festlegung der relativen Wichtigkeit von Anforderungen |
 | **Requirement** | Beschreibung einer Fähigkeit oder Bedingung, die ein System erfüllen muss |
-| **Risk** | Potenzielle zukünftige Ereignisse, die das Projekt negativ beeinflussen könnten |
+| **Requirement Attribute** | Datenelement mit festgelegtem Typ, das eine Anforderung beschreibt (ID, Status, Priorität …) |
+| **Requirements Traceability** | Fähigkeit, Anforderungen zu ihrem Ursprung, durch das Design und in die Umsetzung zu verfolgen |
+| **Requirements Traceability Matrix** | Tabelle, die Anforderungen mit Quellen, Use Cases und Tests verknüpft |
+| **Scope** | Gesamtheit der Arbeit und Lieferobjekte, die für ein Projekt benötigt werden |
 | **Scope Creep** | Schleichende, unkontrollierte Ausweitung des Projektumfangs |
 | **Signoff** | Formelle Freigabe/Genehmigung durch autorisierte Stakeholder |
+| **Solution Requirement** | Anforderung, die Fähigkeiten beschreibt, die eine Lösung haben muss — funktional oder nicht-funktional |
+| **Stated Requirements** | Anforderungen, wie der Stakeholder sie ausdrückt (nicht zwingend was er wirklich braucht) |
+| **Transition Requirements** | Beschreiben Fähigkeiten, die temporär benötigt werden, um vom IST- zum SOLL-Zustand zu gelangen |
+| **Validation** | Prüfung, ob das *richtige* Produkt gebaut wird (erfüllt es den Kundenbedarf?) |
+| **Verification** | Prüfung, ob das Produkt *richtig* gebaut wird (erfüllt es die Spezifikation?) |
+
+### Stakeholder & Rollen
+
+| Begriff | Definition |
+|---------|-----------|
+| **Actor** | Menschliche und nicht-menschliche Rollen, die mit einem System interagieren |
+| **Change Control Board (CCB)** | Kleine Stakeholder-Gruppe, die über Disposition und Behandlung von Anforderungsänderungen entscheidet |
+| **Domain Subject Matter Expert (SME)** | Person mit spezifischer Expertise im untersuchten Fachbereich |
+| **End User** | Person oder System, das direkt mit der Lösung interagiert |
+| **Primary Actor** | Akteur, der Use Cases initiiert und die Systemunterstützung benötigt |
+| **Product Owner** | Verantwortlich für die Priorisierung des Product Backlogs; repräsentiert Business-Interessen |
+| **Project Sponsor** | Genehmigt und finanziert das Projekt |
+| **Scrum Master** | Beseitigt Hindernisse, sichert den Scrum-Prozess (kein Projektmanager) |
 | **SME** | Subject Matter Expert — Fachexperte für einen Bereich |
 | **Stakeholder** | Person oder Gruppe, die Einfluss auf oder Interesse am Projekt hat |
-| **Traceability** | Rückverfolgbarkeit — Verbindung von Anforderungen zu Quellen, Tests und Deliverables |
-| **Traceability Matrix** | Tabelle, die Anforderungen mit Quellen und Tests verknüpft |
-| **Use Case** | Beschreibung einer Interaktion zwischen Nutzer/System und dem zu entwickelnden System |
-| **User Story** | Agiles Format: "Als [Rolle] möchte ich [Feature] damit [Nutzen]" |
-| **Validation** | Prüfung, ob das richtige Produkt gebaut wird (Kundenbedarf erfüllt?) |
-| **Verification** | Prüfung, ob das Produkt richtig gebaut wird (Spezifikation erfüllt?) |
-| **Wireframe** | Grafischer Entwurf einer Benutzeroberfläche (ohne Design/Styling) |
+| **Stakeholder Analysis** | Identifikation aller Stakeholder und ihrer Interessen, Einflüsse und Erwartungen |
+
+### Prozess & Methoden
+
+| Begriff | Definition |
+|---------|-----------|
+| **Agile** | Sammelbegriff für leichtgewichtige Methodiken (Scrum, Kanban, XP, RAD) mit iterativer Entwicklung, kurzen Zyklen und direkter Kundenbeteiligung |
+| **Backlog Grooming** | Review des Product Backlogs: richtige Items, ausreichend Detail, korrekte Priorisierung |
+| **BPMN** | Business Process Modeling Notation — standardisierte Notation für Prozessdiagramme |
+| **Change-driven Methodology** | Methodik mit Fokus auf schnelle inkrementelle Lieferung und direktes Stakeholder-Feedback |
+| **Daily Standup** | 15-Min.-Meeting: Was gestern? Was heute? Blocker? |
+| **Definition of Done** | Team-vereinbartes Kriterium, wann eine User Story als fertig gilt |
+| **Definition of Ready** | Kriterien, die eine User Story erfüllen muss, um bearbeitet werden zu können |
+| **Incremental Delivery** | Lauffähige Software in mehreren Releases liefern — Produkt wird schrittweise ausgeliefert |
+| **Iteration** | Zeitlich begrenzter Entwicklungszyklus (synonym zu Sprint in Scrum) |
+| **JAD (Joint Application Development)** | Anforderungsworkshop-Methodik mit Stakeholdern, SMEs, Endnutzern, BAs und Entwicklern |
+| **Kanban** | Agiles Framework mit visuellen Statussignalen (Kanban-Board: To Do / In Progress / Done) |
+| **Minimum Viable Product (MVP)** | Erste Lieferung mit genug Funktionalität, um Wert zu liefern — wird danach schrittweise erweitert |
+| **Plan-driven Methodology** | Methodik mit starkem Fokus auf Planung und formale Dokumentation |
+| **Sprint** | Zeitlich begrenzter Entwicklungszyklus in Scrum (typisch 2 Wochen) |
+| **Sprint Planning** | Meeting zu Beginn eines Sprints: Was wird gemacht und wie? |
+| **Sprint Retrospective** | Meeting am Sprint-Ende zur Prozessverbesserung im Team |
+| **Sprint Review** | Demo des Increments an Stakeholder am Sprint-Ende |
+| **Timebox** | Festes Zeitfenster für eine Aktivität — Scope wird angepasst, nicht die Zeit |
+
+### Analyse-Techniken & Modelle
+
+| Begriff | Definition |
+|---------|-----------|
+| **Activity Diagram** | UML-Diagramm zur Modellierung von Prozessabläufen mit Swim Lanes |
+| **Brainstorming** | Gruppenaktivität zur Generierung vieler Ideen ohne sofortige Bewertung |
+| **Burndown Chart** | Verfolgt verbleibende Arbeit über Zeit — zeigt Fortschritt im Sprint |
+| **Burn-Up Chart** | Verfolgt abgeschlossene Arbeit vs. Gesamtumfang — zeigt Scope-Änderungen |
+| **Context Diagram** | Sonderform des DFD — zeigt das gesamte System als einen Prozess und seine externen Schnittstellen |
+| **Cost-Benefit Analysis** | Technik zur Feststellung, ob der finanzielle Nutzen die Projektkosten überwiegt |
+| **CRUD** | Create, Read, Update, Delete — die vier Grundoperationen auf persistenten Daten |
+| **Data Flow Diagram (DFD)** | Modelliert ein System als Netzwerk funktionaler Prozesse und Datenflüsse |
+| **Decision Tables** | Tabellarisches Modell zur kompakten Darstellung komplexer Business Rules und Logik |
+| **Decision Tree** | Grafische Darstellung von Entscheidungspunkten mit Verzweigungen und Wahrscheinlichkeiten |
+| **Entity Relationship Diagram (ERD)** | Modelliert Beziehungen zwischen Datenbankentitäten (Rechtecke=Entities, Rauten=Relationships) |
+| **Feasibility Study** | Bewertung von Alternativen auf technische Machbarkeit und Nutzen |
+| **Fishbone Diagram** | Problem-Analyse-Tool (Ursache-Wirkung-Diagramm) — auch Ishikawa-Diagramm |
+| **Focus Group** | Elicitation-Methode: Ideen und Einstellungen in interaktiver Gruppe erheben |
+| **Force Field Analysis** | Grafische Gegenüberstellung von Kräften, die eine Änderung unterstützen vs. blockieren |
+| **Gantt Chart** | Projektplanungs-Tool: Aufgaben, Abhängigkeiten, Ressourcen und Timing |
+| **Observation** | Anforderungserhebung durch direktes Beobachten der Arbeitsumgebung des Stakeholders |
+| **Pareto Chart** | Absteigende Balkendiagramm — zeigt welche Probleme den größten Verbesserungseffekt haben |
+| **PDCA Method** | Plan-Do-Check-Act — 4-Schritt-Methode für kontinuierliche Prozessverbesserung |
+| **RACI Matrix** | Verantwortlichkeitsmatrix: Responsible / Accountable / Consulted / Informed |
+| **Root Cause Analysis** | Systematische Identifikation der Grundursache eines Problems (nicht nur Symptombehandlung) |
+| **SWOT Analysis** | Strengths / Weaknesses / Opportunities / Threats — strategische Analysemethode |
+| **UML** | Unified Modeling Language — standardisierte Notation für Software-Diagramme |
+| **Use Case Diagram** | UML-Diagramm, das Akteure und ihre Interaktionen mit dem System zeigt |
+| **Voice of the Customer (VOC)** | Systematische Methode zur Erfassung von Kundenbedürfnissen und -erwartungen |
+| **Wireframe** | Grafischer Low-Fidelity-Entwurf einer Benutzeroberfläche (ohne Styling) |
+
+### Prototyping-Typen
+
+| Begriff | Definition |
+|---------|-----------|
+| **Evolutionary Prototype** | Prototyp, der kontinuierlich auf Basis von Nutzerfeedback weiterentwickelt wird bis zur finalen Lösung |
+| **Exploratory Prototype** | Prototyp zur Erkundung oder Verifikation von Anforderungen |
+| **Horizontal Prototype** | Zeigt die Breite (alle Screens), aber keine Tiefe (kein Backend) |
+| **Throwaway Prototype** | Prototyp wird nach dem Feedback verworfen — sauberere Neuentwicklung folgt |
+| **Vertical Prototype** | Zeigt die Tiefe eines Features (inkl. Backend), aber nicht alle Screens |
+
+### Finanzkennzahlen & Kennzahlen
+
+| Begriff | Definition |
+|---------|-----------|
+| **Discount Rate** | Prozentsatz zur Abzinsung zukünftiger Cashflows auf den heutigen Wert |
+| **KPI (Key Performance Indicator)** | Messgröße zur Steuerung eines Prozesses oder Services — nur die wichtigsten Metriken |
+| **Net Present Value (NPV)** | Barwert aller zukünftigen Cashflows abzüglich Investition — berücksichtigt Zeitwert des Geldes |
+| **Return on Investment (ROI)** | Prozentuales Verhältnis von Netto-Gewinn zu Investitionskosten |
+| **Team Velocity** | Durchschnittliche Menge an Arbeit, die ein Team pro Sprint liefert (in Story Points) |
+
+### Qualität & Governance
+
+| Begriff | Definition |
+|---------|-----------|
+| **Change Request** | Formeller Antrag zur Änderung einer freigegebenen Anforderung oder eines Deliverables |
+| **Impact Analysis** | Bewertet die Auswirkungen einer geplanten Änderung auf Stakeholder, Projekt oder System |
+| **Issue** | Identifiziertes Problem, das gelöst werden muss |
+| **Lessons Learned** | Reflexionsprozess nach einem Projekt/Sprint: Was lief gut? Was nicht? Was ändern wir? |
+| **Milestone** | Endpunkt einer Phase — markiert Abschluss eines Work Packages oder wichtiger Deliverables |
+| **Organizational Readiness Assessment** | Bewertet, ob Stakeholder bereit sind, die mit einer Lösung verbundene Veränderung zu akzeptieren |
+| **Peer Review** | Validierungstechnik: kleine Gruppe bewertet einen Teil eines Arbeitsergebnisses auf Fehler |
+| **Risk** | Potenzielle zukünftige Ereignisse, die das Projekt negativ beeinflussen könnten |
+| **Risk Management** | Systematischer Prozess zur Identifikation, Analyse und Minderung von Risiken |
+| **Signoff** | Formelle Freigabe/Genehmigung durch autorisierte Stakeholder |
+| **User Acceptance Testing (UAT)** | Testen durch echte Endnutzer zur Validierung, dass die Lösung Business-Anforderungen erfüllt |
+| **Work Breakdown Structure (WBS)** | Hierarchische Zerlegung aller Projektarbeiten in manageable Arbeitspakete |
 
 ---
 
@@ -1029,26 +1136,60 @@ Viele BA-Rollen nutzen zusätzlich:
 - Erkennt Business Rules implizit
 - Kennt regulatorische Rahmenbedingungen
 
-### Self-Assessment-Skala
+### Die 12 Skills des Self-Assessment (aus dem Excel-Tool)
 
-```
-1 — Keine Erfahrung (theoretical knowledge only)
-2 — Anfänger (mit starker Unterstützung arbeitsfähig)
-3 — Fortgeschrittener Anfänger (eigenständig mit gelegentlicher Unterstützung)
-4 — Kompetent (eigenständig in den meisten Situationen)
-5 — Erfahren (Mentor für andere, führt eigenständig komplexe Projekte)
-```
+Das offizielle Self-Assessment-Tool bewertet genau diese 12 Skills:
 
-### Entwicklungspfad
+| # | Skill | Kategorie |
+|---|-------|-----------|
+| 1 | **Oral Communication** | Kommunikation |
+| 2 | **Written Communication** | Kommunikation |
+| 3 | **Problem Solving** | Analytisch |
+| 4 | **Critical Thinking** | Analytisch |
+| 5 | **Negotiation** | Stakeholder |
+| 6 | **Decision-Making** | Analytisch |
+| 7 | **Facilitation** | Kommunikation |
+| 8 | **Technical Aptitude** | Technisch |
+| 9 | **Documentation** | Dokumentation |
+| 10 | **Visual Modeling** | Dokumentation |
+| 11 | **Relationship-Building** | Stakeholder |
+| 12 | **Self-Managing** | Persönlich |
 
-Priorität für BA-Einsteiger:
-1. Communication Skills (Kommunikation ist das Fundament)
-2. Elicitation Skills (Techniken lernen und üben)
-3. Documentation Skills (SMART Requirements, BRD-Struktur)
-4. Analytical Skills (mit Erfahrung wächst das automatisch)
-5. Technical Understanding (Grundlagen reichen für viele BA-Rollen)
-6. Stakeholder Management (kommt mit Projekterfahrung)
-7. Business Domain Knowledge (projektspezifisch aufbauen)
+### Self-Assessment-Skala (4-stufig)
+
+Das Tool verwendet eine 4-Punkte-Skala — bewusst ohne Mittelkategorie, um eine klare Einschätzung zu erzwingen:
+
+| Rating | Bedeutung |
+|--------|-----------|
+| **Very Poor** | Kaum vorhanden — großer Entwicklungsbedarf |
+| **Poor** | Schwach — Verbesserung notwendig |
+| **Good** | Solide — funktioniert in den meisten Situationen |
+| **Very Good** | Stark — Stärke, die aktiv eingesetzt werden kann |
+
+### Zwei-Track-Auswertung
+
+Nach der Bewertung werden die Skills in zwei Tracks aufgeteilt:
+
+**Track 1 — Leverageable Skills (Good + Very Good):**
+- Diese Skills in die "Leverageable Skills"-Liste übertragen
+- Für jeden Skill: Konkrete Erfahrungen mit positivem Ergebnis sammeln (Brainstorming)
+- Ziel: Bewusstsein schaffen, wie diese Stärken strategisch eingesetzt werden können
+
+**Track 2 — Skills to Improve (Poor + Very Poor):**
+- Diese Skills in die "Skills to Improve"-Liste übertragen
+- Für jeden Skill: Aktuelle und zukünftige Verbesserungswege erarbeiten
+- Ziel: Gezielte Entwicklungsmaßnahmen ableiten (Training, Mentoring, Praxisprojekte)
+
+### Entwicklungspfad (empfohlene Reihenfolge für BA-Einsteiger)
+
+1. **Oral + Written Communication** — Fundament; ohne Kommunikation keine Wirkung
+2. **Facilitation** — Workshops und Meetings früh lernen
+3. **Documentation** — SMART Requirements, BRD-Struktur
+4. **Problem Solving + Critical Thinking** — wächst mit Erfahrung, aber gezielt fördern
+5. **Technical Aptitude** — Grundlagen reichen für viele BA-Rollen
+6. **Negotiation + Relationship-Building** — kommt mit Projekterfahrung
+7. **Decision-Making + Self-Managing** — Persönliche Reife und Eigenverantwortung
+8. **Visual Modeling** — Diagramme, BPMN, Wireframes — projektspezifisch aufbauen
 
 ---
 
@@ -1392,26 +1533,47 @@ def calculate_priority_score(
 
 ### Feature 8: Glossar & Nachschlagewerk
 
-**Was:** Integriertes, durchsuchbares BA-Glossar mit 30+ Definitionen + kontextsensitive Hilfe im Editor.
+**Was:** Integriertes, durchsuchbares BA-Glossar mit **351 professionellen Definitionen** (aus `glossary.json`) + kontextsensitive Hilfe im Editor.
+
+**Datenquelle:** `glossary.json` — direkt ladbar, kein manuelles Eingeben nötig.
 
 **Zusatzfunktionen:**
-- Suchfunktion (Fuzzy-Search)
+- Fuzzy-Search über alle 351 Begriffe
 - Verlinkung von Begriffen im Editor (Hover → Definition)
-- Nutzer kann eigene Begriffe hinzufügen
+- Nutzer kann eigene Begriffe hinzufügen (persistent gespeichert)
 - Export als Glossar-Anhang für BRD
+- Filter nach Kategorien (Methoden, Rollen, Techniken, Finanzkennzahlen …)
 
 ---
 
 ### Feature 9: Skills Self-Assessment
 
-**Was:** Interaktives Assessment der 7 BA-Kompetenz-Dimensionen mit Radar-Chart-Visualisierung und Entwicklungsempfehlungen.
+**Was:** Interaktives Assessment der 12 BA-Skills (aus dem Excel-Tool) mit Radar-Chart-Visualisierung, Zwei-Track-Auswertung und Entwicklungsempfehlungen.
 
-**Dimensionen:** Analytical, Communication, Elicitation, Documentation, Technical, Stakeholder Management, Domain Knowledge
+**Skills:** Oral Communication, Written Communication, Problem Solving, Critical Thinking, Negotiation, Decision-Making, Facilitation, Technical Aptitude, Documentation, Visual Modeling, Relationship-Building, Self-Managing
+
+**Skala:** Very Poor / Poor / Good / Very Good (4-stufig)
+
+```python
+SKILLS = [
+    "Oral Communication", "Written Communication", "Problem Solving",
+    "Critical Thinking", "Negotiation", "Decision-Making", "Facilitation",
+    "Technical Aptitude", "Documentation", "Visual Modeling",
+    "Relationship-Building", "Self-Managing"
+]
+RATINGS = ["Very Poor", "Poor", "Good", "Very Good"]
+
+def evaluate(ratings: dict[str, str]) -> dict:
+    leverageable = {k: v for k, v in ratings.items() if v in ("Good", "Very Good")}
+    to_improve = {k: v for k, v in ratings.items() if v in ("Poor", "Very Poor")}
+    return {"leverageable": leverageable, "to_improve": to_improve}
+```
 
 **Output:**
-- Radar-Chart (matplotlib / plotly)
-- Stärken/Schwächen-Analyse
-- Priorisierte Lernempfehlungen (basierend auf Entwicklungspfad aus Kap. 13)
+- Radar-Chart (matplotlib / plotly) — 12 Achsen
+- Zwei-Track-Auswertung: Leverageable Skills + Skills to Improve
+- Erfahrungs-Brainstorming für Stärken
+- Verbesserungsmaßnahmen für Schwächen
 - Speicherbar für Verlauf (Progress Tracking über Zeit)
 
 ---

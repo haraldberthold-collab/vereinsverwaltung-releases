@@ -1,0 +1,1413 @@
+{
+  "metadata": {
+    "source": "TheBAGuide.com / Jeremy Aschenbrenner",
+    "count": 351,
+    "generated": "2026-06-22"
+  },
+  "glossary": [
+    {
+      "term": "Accessibility",
+      "definition": "See Usability"
+    },
+    {
+      "term": "Active Listening",
+      "definition": "Active Listening is a method used to listen and respond to others in a structured and deliberate way.  It requires a listener to understand and actively evaluate what he or she heard."
+    },
+    {
+      "term": "Activity",
+      "definition": "A unit of work performed as part of an initiative or process"
+    },
+    {
+      "term": "Activity Diagram",
+      "definition": "An activity diagram is a UML diagram that is used to model a process. It models the actions (or behaviors) performed by the components of a business process or IT system, the order in which the actions take place, and the conditions that coordinate the actions in a specific order. Activity diagrams use swim lanes to group actions together. Actions can be grouped by the actor performing the action or by the distinct business process or system that is performing the action."
+    },
+    {
+      "term": "Actor",
+      "definition": "The human and nonhuman roles that interact with a system"
+    },
+    {
+      "term": "Agile",
+      "definition": "Agile is a general term and conceptual framework used to describe a number of “light-weight” methodologies, such as Extreme Programming (XP), SCRUM, Kanban, and Rapid Application Development (RAD), which exhibit a series of common characteristics. Some of these characteristics include iterative analysis and development, time-boxed iterations of a predefined length, delivery of the most critical features and functions first, delivery of a complete build with an initial set of limited features within a few months (often 1-2 months), small cross-functional teams usually of 6-9 team members, daily team communication meetings, and reduced levels of documentation."
+    },
+    {
+      "term": "Agile Mindset",
+      "definition": "A set of attitudes supporting an agile working environment; respect, collaboration, improvement, and learning cycles."
+    },
+    {
+      "term": "Alternative Flow",
+      "definition": "An alternate flow describes a use case scenario other than the basic flow that results in a user completing his or her goal.  It is often considered to be an optional flow and implies that the user has chosen to take an alternative path through the system."
+    },
+    {
+      "term": "Analysis",
+      "definition": "To formulate a model of the problem that is independent of implementation considerations. In short, Analysis focuses on what to do, while design focuses on how to do it."
+    },
+    {
+      "term": "Analyst",
+      "definition": "A generic name for a role with the responsibilities of developing and managing requirements. Other names include business analyst, business integrator, requirements analyst, requirements engineer, and systems analyst."
+    },
+    {
+      "term": "Architecture",
+      "definition": "The structure of a system or IT service, including the relationship of components to each other and to the environment they are in."
+    },
+    {
+      "term": "Association",
+      "definition": "A link between two elements or objects in a diagram."
+    },
+    {
+      "term": "Assumption",
+      "definition": "Assumptions are influencing factors that are believed to be true but have not been confirmed to be accurate."
+    },
+    {
+      "term": "Attribute",
+      "definition": "A data element with a specified data type that describes information associated with a concept or entity."
+    },
+    {
+      "term": "Audit",
+      "definition": "Formal inspection and verification to check whether a standard or set of guidelines are being followed, that records are accurate, or that efficiency and effectiveness targets are being met."
+    },
+    {
+      "term": "Availability",
+      "definition": "Ability of a configuration item or IT service to perform its function when required."
+    },
+    {
+      "term": "Backlog Grooming",
+      "definition": "The review of the Product Backlog to ensure it contains the right items (user stories), the items have enough detail to be worked, and the items are prioritized."
+    },
+    {
+      "term": "Baseline",
+      "definition": "A point-in-time view of requirements that have been reviewed and agreed upon to serve as a basis for further development."
+    },
+    {
+      "term": "Benchmarking",
+      "definition": "A comparison of a process or system’s cost, time, quality, or other metrics to those of leading peer organizations to identify opportunities for improvement."
+    },
+    {
+      "term": "Brainstorming",
+      "definition": "Brainstorming is a team activity that seeks to produce a broad or diverse set of options through the rapid and uncritical generation of ideas."
+    },
+    {
+      "term": "Burn -Up Chart",
+      "definition": "Used to track the progress of work completed versus the total work (project scope). The burn-up chart gives a quick view of the amount of work that is completed versus the total amount of work needing to be completed."
+    },
+    {
+      "term": "Burndown Chart",
+      "definition": "Used to track the progress of work completed. It compares the amount of work remaining (typically measured along the vertical axis) against time (measured along the horizontal axis). The burndown chart gives a quick view of the amount of work that is completed over time."
+    },
+    {
+      "term": "Business",
+      "definition": "An overall corporate entity or organization formed of a number of business units."
+    },
+    {
+      "term": "Business Analysis",
+      "definition": "Business analysis is the set of tasks and techniques used to work as a liaison among stakeholders in order to understand the structure, policies and operations of an organization, and recommend solutions that enable the organization to achieve its goals."
+    },
+    {
+      "term": "Business Analysis Body of Knowledge (BABOK)",
+      "definition": "A document that describes and defines business analysis as a discipline, rather than define the responsibilities of a person with the job title of Business Analyst. These derived standards are the opinion of the International Institute for Business Analysis (IIBA)."
+    },
+    {
+      "term": "Business Analysis Planning and Monitoring",
+      "definition": "Describes how a business analyst determines which activities will be needed to complete the business analysis effort.  The tasks within this knowledge area govern the business analysis tasks in all of the other knowledge areas."
+    },
+    {
+      "term": "Business Analyst",
+      "definition": "A practitioner of business analysis."
+    },
+    {
+      "term": "Business Case",
+      "definition": "An assessment of the costs and benefits associated with a proposed initiative."
+    },
+    {
+      "term": "Business Constraints",
+      "definition": "Business constraints are limitations placed on the solution design by the organization that needs the solution. Business constraints describe limitations on available solutions or an aspect of the current state that cannot be changed by the deployment of the new solution. See also technical constraint."
+    },
+    {
+      "term": "Business Entity Model",
+      "definition": "A business entity model is a logical model that documents the entities, or things, that a business or business process uses and interacts with in order to accomplish its business activities and goals. In addition to documenting entities, a business entity model may capture the attributes of an entity, relationships between entities, and cardinality information. Many business entity models are created in the form of a UML class diagram."
+    },
+    {
+      "term": "Business Goal",
+      "definition": "A state or condition the business must satisfy to reach its vision."
+    },
+    {
+      "term": "Business Needs",
+      "definition": "A type of high-level business requirement that is a statement of a business objective, or an impact the solution should have on its environment."
+    },
+    {
+      "term": "Business Process",
+      "definition": "A process that is owned and carried out by the business. Contributes to the delivery of a product or service to a business customer."
+    },
+    {
+      "term": "Business Process Modeling Notation (BPMN)",
+      "definition": "Provides a syntax for notation that can be fundamentally understood by all business users, business analysts, and technical developers."
+    },
+    {
+      "term": "Business Requirement",
+      "definition": "A higher level business rationale that, when addressed, will permit the organization to increase revenue, avoid costs, improve service, or meet regulatory requirements."
+    },
+    {
+      "term": "Business Requirement Document (BRD)",
+      "definition": "A Business Requirements Document is a requirements package that describes business requirements and stakeholder requirements (it documents requirements of interest to the business, rather than documenting business requirements)."
+    },
+    {
+      "term": "Business Rule",
+      "definition": "A constraint, procedure, or directive that governs an aspect of the business."
+    },
+    {
+      "term": "Business Unit",
+      "definition": "A segment of the business that has its own plans, metrics, income, and costs. Each business unit owns assets and uses these to create value for customers in the form of goods and services."
+    },
+    {
+      "term": "Capability",
+      "definition": "A function of an organization that enables it to achieve a business goal or objective."
+    },
+    {
+      "term": "Capacity",
+      "definition": "The maximum throughput that a configuration item or IT service can deliver whilst meeting agreed service level targets."
+    },
+    {
+      "term": "Cardinality",
+      "definition": "The number of occurrences of one entity in a data model that is linked to a second entity. Cardinality is shown on a data model with a special notation, number (e.g., 1), or letter (e.g., M for many)."
+    },
+    {
+      "term": "Cause and Effect Diagram",
+      "definition": "See fishbone diagram."
+    },
+    {
+      "term": "Certification of Competency in Business Analysis (CCBA)",
+      "definition": "The Certification of Competency in Business Analysis (CCBA) is the designation given to those professionals who sit for and pass the CCBA exam.  The CCBA is an intermediate stepping stone for those business analysts who do not meet the more stringent requirements of the CBAP."
+    },
+    {
+      "term": "Certified Business Analysis Professional (CBAP)",
+      "definition": "The Certified Business Analysis Professional certification (CBAP certification) is the designation given to those professionals who sit for and pass the CBAP exam.  For this reason, the term CBAP is often used as a shorthand term to refer to the CBAP exam itself."
+    },
+    {
+      "term": "Change",
+      "definition": "The addition, modification, or removal of anything that could have an effect on IT services. The scope should include all IT services, configuration items, processes, and documents."
+    },
+    {
+      "term": "Change Control Board (CCB)",
+      "definition": "A small group of stakeholders who will make decisions regarding the disposition and treatment of changing requirements."
+    },
+    {
+      "term": "Change Schedule",
+      "definition": "A document that lists all approved changes and their planned implementation dates."
+    },
+    {
+      "term": "Change-driven Methodology",
+      "definition": "A methodology that focuses on rapid delivery of solution capabilities in an incremental fashion and direct involvement of stakeholders to gather feedback on the solution's performance."
+    },
+    {
+      "term": "Checklist",
+      "definition": "A quality control technique. They may include a standard set of quality elements that reviewers use for requirements verification and requirements validation or be specifically developed to capture issues of concern to the project."
+    },
+    {
+      "term": "Class",
+      "definition": "A descriptor for a set of system objects that share the same attributes, operations, relationships, and behavior. A class represents a concept in the system under design. When used as an analysis model, a class will generally also correspond to a real-world entity."
+    },
+    {
+      "term": "Class Diagram",
+      "definition": "A class diagram is a UML diagram that describes the structure of a system by showing the classes of a system, the attributes and operations that belong to each class, and the relationships between the classes."
+    },
+    {
+      "term": "Class Model",
+      "definition": "A type of data model that depicts information groups as classes."
+    },
+    {
+      "term": "Code",
+      "definition": "A system of programming statements, symbols, and rules used to represent instructions to a computer."
+    },
+    {
+      "term": "Commercial-off-the-Shelf (COTS)",
+      "definition": "Application software or middleware that can be purchased from a third party."
+    },
+    {
+      "term": "Communication Diagram",
+      "definition": "A communication diagram is a UML 2.0 diagram which models the objects or parts of a system, the interactions (or messages) between them, and the sequence in which these interactions occur. A communication diagram models this as a free-form arrangement of objects or parts of a system. The free-form arrangement of objects lends itself well to showing the sequenced interactions in a more compact space."
+    },
+    {
+      "term": "Competitive Analysis",
+      "definition": "A structured process which captures the key characteristics of an industry to predict the long-term profitability prospects and to determine the practices of the most significant competitors."
+    },
+    {
+      "term": "Concentration Ratio",
+      "definition": "Concentration Ratio (CR) is a measurement used to understand the level of competition that exists within a market or industry in which a company operates."
+    },
+    {
+      "term": "Constraint",
+      "definition": "A constraint describes any limitations imposed on the solution that do not support the business or stakeholder needs."
+    },
+    {
+      "term": "Context Diagram",
+      "definition": "A context diagram is a special form of a data flow diagram that represents an entire system as a single process and highlights the interactions between the system being analyzed and other systems or people that interact with it."
+    },
+    {
+      "term": "Convergent Thinking",
+      "definition": "Convergent thinking is the process of focusing on a few sets of ideas and evaluating them based on selection criteria in order to narrow down the available options."
+    },
+    {
+      "term": "Cost-Benefit Analysis",
+      "definition": "Cost Benefit Analysis is a technique used to determine if the financial benefits of a project outweigh the associated cost of undertaking the project in the first place.  For a short term project where the benefit may be an immediate one-time cash windfall, this may be as simple as subtracting the total of all project costs from the total of all project benefits.  If the total is positive, then the project may be worth completing."
+    },
+    {
+      "term": "Critical Success Factor (CSF)",
+      "definition": "Something that must happen if a process, project, plan, or IT service is to succeed. Key Performance Indicators are often used to measure the achievement level of the Critical Success Factor"
+    },
+    {
+      "term": "CRUD",
+      "definition": "CRUD stands for: Create, Read, Update, Delete. These are the four basic functions that can be performed when working with data in persistent storage."
+    },
+    {
+      "term": "Customer",
+      "definition": "A stakeholder who uses products or services delivered by an organization."
+    },
+    {
+      "term": "Daily Standup",
+      "definition": "15-minute meeting (generally at the start of the workday) where the team discusses what the accomplished yesterday, what they are planning to work on today, and any impediments or issues they are running into."
+    },
+    {
+      "term": "Data Dictionary",
+      "definition": "An analysis model describing the data structures and attributes needed by the system."
+    },
+    {
+      "term": "Data Entity",
+      "definition": "A group of related information to be stored by the system. Entities can be people, roles, places, things, organizations, occurrences in time, concepts, or documents."
+    },
+    {
+      "term": "Data Flow Diagram (DFD)",
+      "definition": "A data flow diagram models the system as a network of functional processes and its data. It documents the system’s processes, data stores, flows which carry data, and terminators which are the external entities with which the system communicates."
+    },
+    {
+      "term": "Data Model",
+      "definition": "An analysis model that depicts the logical structure of data, independent of the data design or data storage mechanisms."
+    },
+    {
+      "term": "Database Management System (DBMS)",
+      "definition": "Software system that is utilized to manage databases. Includes facilities to define, create, and access data tables."
+    },
+    {
+      "term": "Database View",
+      "definition": "A database view is a stored query that returns data from one or more database tables. The stored query, or view, is a virtual table. Once you have defined a view, you can reference it just as you would any other table in a database. Since the view is the result of a stored query, it does not contain a copy of the data itself. Instead, it references the data in the underlying base tables."
+    },
+    {
+      "term": "Decision Analysis",
+      "definition": "An approach to decision-making that examines and models the possible consequences of different decisions. Decision analysis assists in making an optimal decision under conditions of uncertainty."
+    },
+    {
+      "term": "Decision Tables",
+      "definition": "An analysis model that specifies complex business rules or logic concisely in an easy-to-read tabular format, specifying all of the possible conditions and actions that need to be accounted for in business rules."
+    },
+    {
+      "term": "Decision Tree",
+      "definition": "A decision tree graphically represents a series of decision points with branching occurring at each decision point forming a tree-like structure.  A decision tree maps out each possible outcome and will often also include the probability of each outcome."
+    },
+    {
+      "term": "Decomposition",
+      "definition": "A technique that subdivides a problem into its component parts in order to facilitate analysis and understanding of those components."
+    },
+    {
+      "term": "Defect",
+      "definition": "A deficiency in a product or service that reduces its quality or varies from a desired attribute, state, or functionality. See also requirements defect."
+    },
+    {
+      "term": "Definition of Ready",
+      "definition": "A term (or document) that describes a user story that contains enough details to be worked."
+    },
+    {
+      "term": "Definition of Done",
+      "definition": "A term (or document) that describes a user story that meets the team's criteria for being completed."
+    },
+    {
+      "term": "Deliverable",
+      "definition": "Any unique and verifiable work product or service that a party has agreed to deliver."
+    },
+    {
+      "term": "Design",
+      "definition": "Decide how the solution will be implemented to best meet the defined requirements."
+    },
+    {
+      "term": "Design Constraints",
+      "definition": "Software requirements that limit the options available to the system designer."
+    },
+    {
+      "term": "Desired Outcome",
+      "definition": "The business benefits that will result from meeting the business need and the end state desired by stakeholders."
+    },
+    {
+      "term": "Developer",
+      "definition": "Developers are responsible for the construction of software applications. Areas of expertise include development languages, development practices and application components."
+    },
+    {
+      "term": "Dialog Hierarchy",
+      "definition": "An analysis model that shows user interface dialogs arranged as hierarchies."
+    },
+    {
+      "term": "Dialog Map",
+      "definition": "An analysis model that illustrates the architecture of the system's user interface."
+    },
+    {
+      "term": "Discount Rate",
+      "definition": "The discount rate is the percentage rate used to reduce future cash flow values for each year in the future that they occur.  This is necessary to determine what the comparable cash flow amount would be in present terms."
+    },
+    {
+      "term": "Discovery Session",
+      "definition": "See requirements workshop."
+    },
+    {
+      "term": "Divergent Thinking",
+      "definition": "Divergent thinking is the process of generating many ideas that branch out from an original topic or concept."
+    },
+    {
+      "term": "DMAIC",
+      "definition": "An abbreviation for Define, Measure, Analyze, Improve, and Control. Refers to a data-driven improvement cycle used for improving, optimizing, and stabilizing business processes and designs.\n∙ Define: clearly articulate the business problem, goal, potential resources, scope, and timeline.\n∙ Measure: establish current baselines as the basis for improvement; data collection step; identify the gap between current and required performance.\n∙ Analyze: validate and select root cause for elimination.\n∙ Improve: identify, test, and implement a solution to the problem; in whole or in part.\n∙ Control: sustain the gains; monitor the improvements to ensure continued and sustainable success."
+    },
+    {
+      "term": "Document Analysis",
+      "definition": "Document analysis is a means to elicit requirements of an existing system by studying available documentation and identifying relevant information."
+    },
+    {
+      "term": "Domain",
+      "definition": "The problem area undergoing analysis."
+    },
+    {
+      "term": "Domain Subject Matter Expert (SME)",
+      "definition": "A person with specific expertise in an area or domain under investigation."
+    },
+    {
+      "term": "Elicitation",
+      "definition": "Describes the steps required to elicit requirements from stakeholders.  It includes preparing for elicitation by identifying a combination of techniques that will be used, conducting the elicitation using the identified techniques, documenting the elicitation results, and confirming what has been documented."
+    },
+    {
+      "term": "Elicitation Workshop",
+      "definition": "See requirements workshop."
+    },
+    {
+      "term": "End User",
+      "definition": "A person or system that directly interacts with the solution. End users can be humans who interface with the system or systems that send or receive data files to or from the system."
+    },
+    {
+      "term": "Enterprise",
+      "definition": "An organizational unit, organization, or collection of organizations that share a set of common goals and collaborate to provide specific products or services to customers."
+    },
+    {
+      "term": "Enterprise Analysis (EA)",
+      "definition": "Describes the business analysis activities required to compare the needs of the business against the current capabilities of the business and identify opportunities for improvement.  Then, based on this information, the analyst can determine which solutions should be selected to resolve the issue."
+    },
+    {
+      "term": "Enterprise Architecture",
+      "definition": "Enterprise architecture is a description of an organization’s business processes, IT software and hardware, people, operations and projects, and the relationships between them."
+    },
+    {
+      "term": "Entity Relationship Diagram (ERD)",
+      "definition": "An entity-relationship diagram models the relationships between entities in a database.  Standard symbols are used to represent different types of information.  The conventional notation uses rectangles to represent entities (nouns), diamonds to represent relationships (verbs) and ovals to represent attributes of entities.  Other notations are sometimes used."
+    },
+    {
+      "term": "Entry Certificate in Business Analysis (ECBA)",
+      "definition": "The Entry Certificate in Business Analysis (ECBA) is the designation given to those professionals who sit for and pass the ECBA exam.  The ECBA is an entry-level certification for aspiring Business Analysts. There are no years of experience requirements with this exam, but instead, it requires hours spent learning (called professional development hours)."
+    },
+    {
+      "term": "Escalation",
+      "definition": "An activity that obtains additional resources when they are needed to meet service level targets or customer expectations."
+    },
+    {
+      "term": "Evaluation",
+      "definition": "The systematic and objective assessment of a solution to determine its status and efficacy in meeting objectives over time, and to identify ways to improve the solution to better meet objectives. See also metric, indicator and monitoring."
+    },
+    {
+      "term": "Event",
+      "definition": "An event is something that occurs to which an organizational unit, system, or process must respond."
+    },
+    {
+      "term": "Event Response Table",
+      "definition": "An analysis model in table format that defines the events (i.e., the input stimuli that trigger the system to carry out some function) and their responses."
+    },
+    {
+      "term": "Evolutionary Prototype",
+      "definition": "A prototype that is continuously modified and updated in response to feedback from users."
+    },
+    {
+      "term": "Exception Flow",
+      "definition": "A use case exception flow is an unintended path through the system usually as a result of missing information or system availability problems.  Exception flows represent an undesirable path to the user.  However, even though the exception flow has occurred the system will ideally react in a way that recovers the flow and provide some useful information to the user."
+    },
+    {
+      "term": "Exploratory Prototype",
+      "definition": "A prototype developed to explore or verify requirements."
+    },
+    {
+      "term": "Extensible Markup Language (XML)",
+      "definition": "XML was designed to transport and store data. It is a self-descriptive markup language. This means that the tags used to describe the content of the XML file are not predefined, but instead, the author defines his own tags and document structure."
+    },
+    {
+      "term": "External Interfaces",
+      "definition": "Interfaces with other systems (hardware, software, and human) that a proposed system will interact with."
+    },
+    {
+      "term": "Fact Model",
+      "definition": "A fact model is a static model which structures business knowledge about core business concepts and business operations. It is sometimes called a business entity model. The fact model focuses on the core business concepts (called terms), and the logical connections between them (called facts). The facts are typically verbs which describe how one term relates to another."
+    },
+    {
+      "term": "Feasibility Analysis",
+      "definition": "See feasibility study."
+    },
+    {
+      "term": "Feasibility Study",
+      "definition": "An evaluation of proposed alternatives to determine if they are technically possible within the constraints of the organization and whether they will deliver the desired benefits to the organization."
+    },
+    {
+      "term": "Feature",
+      "definition": "A cohesive bundle of externally visible functionality that should align with business goals and objectives. Each feature is a logically related grouping of functional requirements or non-functional requirements described in broad strokes."
+    },
+    {
+      "term": "Financial Ratio Analysis",
+      "definition": "Financial Ratio Analysis is the evaluation and interpretation of a company’s financial data using standard financial ratios or accounting ratios to determine a company’s financial state or condition. A financial ratio or accounting ratio is a ratio of two values that are taken for a company financial statements (Balance Sheet, Income Statement, Statement of CashFlows, Statement of Retained Earnings)."
+    },
+    {
+      "term": "Fishbone Diagram",
+      "definition": "A fishbone diagram is a problem-analysis tool that derives its name from its shape which resembles the skeleton of a fish. Developed by Dr. Kaoru Ishikawa, a Japanese quality control statistician, the fishbone diagram is a systematic way of looking at an effect and identifying and capturing the causes that contribute and result in that particular effect. For this reason, it is sometimes referred to as a cause and effect diagram."
+    },
+    {
+      "term": "Focus Group",
+      "definition": "A focus group is a means to elicit ideas and attitudes about a specific product, service or opportunity in an interactive group environment. The participants share their impressions, preferences and needs, guided by a moderator."
+    },
+    {
+      "term": "Force Field Analysis",
+      "definition": "A graphical method for depicting the forces that support and oppose a change. Involves identifying the forces, depicting them on opposite sides of a line (supporting and opposing forces) and then estimating the strength of each set of forces."
+    },
+    {
+      "term": "Function",
+      "definition": "A team or a group of people and the tools they use to carry out one or more processes or activities"
+    },
+    {
+      "term": "Functional Requirements",
+      "definition": "The product capabilities, or things the product must do for its users."
+    },
+    {
+      "term": "Gantt Chart",
+      "definition": "A project planning and management tool that displays all the tasks or activities associated with a project or initiative as well as the relationships/dependencies between these tasks. Resources, completion status, timing, and constraints are all shown in the chart."
+    },
+    {
+      "term": "Gap Analysis",
+      "definition": "Gap analysis is the process of comparing two things in order to determine the difference or “gap” that exists between them. Most often gap analysis is used to compare two different states of something; the current state and the future state."
+    },
+    {
+      "term": "Glossary",
+      "definition": "A list and definition of the business terms and concepts relevant to the solution being built or enhanced."
+    },
+    {
+      "term": "Goal",
+      "definition": "See business goal"
+    },
+    {
+      "term": "Handoff",
+      "definition": "Any time in a process when one person (or job title) or group passes the item moving through the process to another person; a handoff has the potential to add defects, time, and cost to a process."
+    },
+    {
+      "term": "Herfindahl Hirschman Index (HHI)",
+      "definition": "The Herfindahl Hirschman Index (HHI) is a measurement used to understand the level of competition that exists within a market or industry, as well as give an indication of how the distribution of market share occurs across the companies included in the index."
+    },
+    {
+      "term": "Horizontal Prototype",
+      "definition": "A prototype that shows a shallow, and possibly wide, view of the system's functionality, but which does not generally support any actual use or interaction."
+    },
+    {
+      "term": "HyperText Markup Language (HTML)",
+      "definition": "HyperText Markup Language or HTML is used to define the structure of webpages. Markup languages describe annotations that are added to any document that is distinguishable from the original text of the document. In the case of HTML, these annotations are HTML tags which are used to define the structure of a webpage such as headings, paragraphs, lists, tables, data, quotes, and more."
+    },
+    {
+      "term": "Impact Analysis",
+      "definition": "An impact analysis assesses the effects that a proposed change will have on a stakeholder or stakeholder group, project, or system."
+    },
+    {
+      "term": "Implementation Subject Matter Expert (SME)",
+      "definition": "A stakeholder who will be responsible for designing, developing, and implementing the change described in the requirements and have specialized knowledge regarding the construction of one or more solution components."
+    },
+    {
+      "term": "Incident",
+      "definition": "An unplanned interruption to an IT service or reduction in the quality of an IT service."
+    },
+    {
+      "term": "Included Use Cases",
+      "definition": "A use case composed of a common set of steps used by multiple use cases."
+    },
+    {
+      "term": "Incremental Delivery",
+      "definition": "Creating working software in multiple releases so the entire product is delivered in portions over time."
+    },
+    {
+      "term": "Indicator",
+      "definition": "An indicator identifies a specific numerical measurement that indicates progress toward achieving an impact, output, activity or input. See also metric."
+    },
+    {
+      "term": "Information Technology (IT)",
+      "definition": "The use of technology for the storage, communication, or processing of information. The technology typically includes computers, telecommunications, applications, and other software."
+    },
+    {
+      "term": "Initiative",
+      "definition": "Any effort undertaken with a defined goal or objective."
+    },
+    {
+      "term": "Inspection",
+      "definition": "A formal type of peer review that utilizes a predefined and documented process, specific participant roles, and the capture of defect and process metrics. See also structured walkthrough."
+    },
+    {
+      "term": "Interface",
+      "definition": "A shared boundary between any two persons and/or systems through which information is communicated."
+    },
+    {
+      "term": "International Institute of Business Analysis (IIBA)",
+      "definition": "An independent non-profit professional association serving the field of Business Analysis."
+    },
+    {
+      "term": "Interoperability",
+      "definition": "Ability of systems to communicate by exchanging data or services."
+    },
+    {
+      "term": "Interview",
+      "definition": "A systematic approach to elicit information from a person or group of people in an informal or formal setting by asking relevant questions and documenting the responses."
+    },
+    {
+      "term": "IT Infrastructure Library (ITIL)",
+      "definition": "A set of best practice guidelines for IT service management."
+    },
+    {
+      "term": "Iteration",
+      "definition": "A process in which a deliverable (or the solution overall) is progressively elaborated upon. Each iteration is a self-contained \"mini-project\" in which a set of activities are undertaken, resulting in the development of a subset of project deliverables. For each iteration, the team plans its work, does the work, and checks it for quality and completeness. (Iterations can occur within other iterations as well. For example, an iteration of requirements development would include elicitation, analysis, specification, and validation activities.)"
+    },
+    {
+      "term": "Joint Application Development (JAD)",
+      "definition": "Joint Application Development is a requirements-definition and software system design methodology in which stakeholders, subject matter experts (SME), end-users, business analysts, software architects, and developers attend collaborative workshops (called JAD sessions) to work out a system's details."
+    },
+    {
+      "term": "Kanban",
+      "definition": "An Agile framework that uses visual cues (via a Kanban board) to show the status of identified tasks. At minimum, the board provides insight into work that has yet to be started, work that is in progress, and work that has been completed."
+    },
+    {
+      "term": "Key Performance Indicator (KPI)",
+      "definition": "A metric that is used to help manage a process, IT service, or activity. While many metrics may be measured, only the most important ones are considered KPIs."
+    },
+    {
+      "term": "Knowledge Area",
+      "definition": "A group of related tasks that support a key function of business analysis."
+    },
+    {
+      "term": "Lean",
+      "definition": "An integrated approach to designing and improving work towards a customer-focused ideal state, through the engagement of all people aligned by common principles and practices. These include direct observation of work such as activities, flows and connection, systemic waste elimination, systematic problem solving, establishment of a high-level of agreement of both what and how, and creation of a learning organization."
+    },
+    {
+      "term": "Legacy System",
+      "definition": "A system in the twilight of its life cycle that is developed and hosted on aging technology. In many organizations, if a new system were implemented, the former system would be considered the legacy system."
+    },
+    {
+      "term": "Lessons Learned Process",
+      "definition": "A process improvement technique used to learn about and improve on a process or project. A lessons learned session involves a special meeting in which the team explores what worked, what didn't work, what could be learned from the just-completed iteration, and how to adapt processes and techniques before continuing or starting anew."
+    },
+    {
+      "term": "Logical Data Dictionary",
+      "definition": "A centralized repository of logical data elements and other metadata about them. This may include the meaning of a piece of data, relationships to other logical data, origin, usage, type, and length. Logical data usually models the real world far more closely that of physical data since physical data and its structure is usually optimized for system performance purposes."
+    },
+    {
+      "term": "Macro-environmental Factors",
+      "definition": "The larger external factors that affect an organization’s ability to fulfill its mission, e.g.: political, legal, economic and sociocultural."
+    },
+    {
+      "term": "Maintainability",
+      "definition": "A measure of how quickly and effectively a configuration item or IT service can be restored to normal working after a failure."
+    },
+    {
+      "term": "Management By Walking Around",
+      "definition": "Management By Walking Around (MBWA) is a popular management technique used by top-level managers in traditional brick and mortar businesses where managers walk around and observe the work, culture, atmosphere, and problems that may exist."
+    },
+    {
+      "term": "Measures of Success",
+      "definition": "The criteria, metrics or means by which a comparison is made with output."
+    },
+    {
+      "term": "Metadata",
+      "definition": "Metadata is information that is used to understand the context and validity of information recorded in a system."
+    },
+    {
+      "term": "Meta-Data Repository",
+      "definition": "See Logical Data Dictionary"
+    },
+    {
+      "term": "Methodology",
+      "definition": "A set of processes, rules, templates, and working methods that prescribe how business analysis, solution development, and implementation is performed in a particular context."
+    },
+    {
+      "term": "Metric",
+      "definition": "A standard from measurement. Metrics may have a number of characteristics such as the following:\n∙ Leading - a measurement that predicts future success or failure; sometimes called \"windshield view,\" these are used to predict outcomes.\n∙ Lagging - a measurement that depicts what has already occurred; sometimes called \"rear view mirror view,\" these may be used to determine corrective measures.\n∙ Quantitative - a numerical measurement of an outcome.\n∙ Qualitative - a non-numerical measurement of an outcome such as customer satisfaction.\n∙ Output - typically numerical and measures units of goods or services produced.\n∙ Outcome - can be quantitative or qualitative and measures broader impact."
+    },
+    {
+      "term": "Micro-environmental Factors",
+      "definition": "The external factors specific to an organization that affects its ability to fulfill its mission e.g.: external customers, agents, distributors, suppliers, competitors, etc."
+    },
+    {
+      "term": "Milestone",
+      "definition": "The end of a stage that marks the completion of a work package (project management) or phase, typically marked by a high-level event such as completion, endorsement or signing of a deliverable, document or a high-level review meeting. A large complex project may have numerous milestones before the project is complete."
+    },
+    {
+      "term": "Minimum Viable Product (MVP)",
+      "definition": "The first product deliverable that will provide value to the organization and meet their base needs. The MVP is generally only used for a short time as it is often updated to include additional features and functionality."
+    },
+    {
+      "term": "Mitigate",
+      "definition": "Take action to reduce the exposure to a risk or to, at minimum, reduce its consequences."
+    },
+    {
+      "term": "Model",
+      "definition": "A representation and simplification of reality developed to convey information to a specific audience to support analysis, communication, and understanding."
+    },
+    {
+      "term": "Model-Based-Management",
+      "definition": "Model-Based Management refers to the activity of managing and making informed decisions regarding the future direction of a business, process, or system(s) based on information gleaned and understood from models that document the current state."
+    },
+    {
+      "term": "Model-View-Controller",
+      "definition": "Model-View-Controller, or MVC, is a design and architectural pattern used to ensure that the modeling of the domain, the presentation information, and the actions taken based on user input are loosely coupled and maintained as separate classes."
+    },
+    {
+      "term": "Monitoring",
+      "definition": "Monitoring is a continuous process of collecting data to determine how well a solution is implemented compared to expected results. See also metric and indicator."
+    },
+    {
+      "term": "Needs",
+      "definition": "See business needs."
+    },
+    {
+      "term": "Net Present Value (NPV)",
+      "definition": "The value of an item, expressed in today's currency. Is used to account for the effect of time on the value of money (inflation, interest, etc.)"
+    },
+    {
+      "term": "Non-Functional Requirement",
+      "definition": "Non-functional requirements are characteristics of a system or solution which describe non-behavioral characteristics or qualities of a system.  Usability, reliability, interoperability, scalability, extensibility, etc.  Non-functional requirements are also commonly referred to as quality of service (QoS) requirements or service-level requirements."
+    },
+    {
+      "term": "Non-value-adding activities",
+      "definition": "Any steps in a process that do not add value to the customer or process. Examples include rework, handoffs, inspection, and delays."
+    },
+    {
+      "term": "Object-Oriented Modeling",
+      "definition": "An approach to software engineering where software is comprised of components that are encapsulated groups of data and functions which can inherit behavior and attributes from other components; and whose components communicate via messages with one another. In some organizations, the same approach is used for business engineering to describe and package the logical components of the business."
+    },
+    {
+      "term": "Objective",
+      "definition": "A target or metric that a person or organization seeks to meet in order to progress towards a goal."
+    },
+    {
+      "term": "Observation",
+      "definition": "Observation is a means to elicit requirements by conducting an assessment of the stakeholder’s work environment."
+    },
+    {
+      "term": "Operational Support",
+      "definition": "A stakeholder who helps to keep the solution functioning, either by providing support to end users (trainers, help desk) or by keeping the solution operational on a day-to-day basis (network and other tech support)."
+    },
+    {
+      "term": "Operative Rules",
+      "definition": "The business rules an organization chooses to enforce as a matter of policy. They are intended to guide the actions of people working within the business. They may oblige people to take certain actions, prevent people from taking actions, or prescribe the conditions under which an action may be taken."
+    },
+    {
+      "term": "Opportunity Analysis",
+      "definition": "The process of examining new business opportunities to improve organizational performance."
+    },
+    {
+      "term": "Optionality",
+      "definition": "Defining whether or not a relationship between entities in a data model is mandatory. Optionality is shown on a data model with a special notation."
+    },
+    {
+      "term": "Organization",
+      "definition": "An autonomous unit within an enterprise under the management of a single individual or board, with a clearly defined boundary that works towards common goals and objectives. Organizations operate on a continuous basis, as opposed to an organizational unit or project team, which may be disbanded once their objectives are achieved."
+    },
+    {
+      "term": "Organization Modeling",
+      "definition": "The analysis technique used to describe roles, responsibilities and reporting structures that exist within an organization."
+    },
+    {
+      "term": "Organizational Process Asset",
+      "definition": "All materials used by groups within an organization to define, tailor, implement, and maintain their processes."
+    },
+    {
+      "term": "Organizational Readiness Assessment",
+      "definition": "An assessment that describes whether stakeholders are prepared to accept the change associated with a solution and are able to use it effectively."
+    },
+    {
+      "term": "Organizational Unit",
+      "definition": "Any recognized association of people in the context of an organization or enterprise."
+    },
+    {
+      "term": "Pareto Chart",
+      "definition": "Focuses on efforts or the problems that have the greatest potential for improvement by showing relative frequency and/or size in a descending bar graph. Based on Pareto's Principle."
+    },
+    {
+      "term": "PDCA Method",
+      "definition": "A 4-step, iterative method commonly used for Business Process Improvement.  PDCA stands for Plan, Do, Check, Act.  It is used to create a feedback loop based on measurable results and make incremental changes and improvements over time."
+    },
+    {
+      "term": "Peer Review",
+      "definition": "A validation technique in which a small group of stakeholders evaluates a portion of a work product to find errors to improve its quality."
+    },
+    {
+      "term": "Pilot",
+      "definition": "Trial implementation of a solution on a limited scale to ensure its effectiveness and test its impact."
+    },
+    {
+      "term": "Plan-driven Methodology",
+      "definition": "Any methodology that emphasizes planning and formal documentation of the processes used to accomplish a project and of the results of the project. Plan-driven methodologies emphasize the reduction of risk and control over outcomes over the rapid delivery of a solution."
+    },
+    {
+      "term": "Primary Actor",
+      "definition": "Primary actors are people, or at times even other systems, that require the assistance of the system under consideration to achieve their goal.  They initiate the use cases of the system (business processes or application functionality).  A use case within the system may have more than one primary actor, since more than one type of role may initiate the processes or functions of the system."
+    },
+    {
+      "term": "Prioritization",
+      "definition": "The process of determining the relative importance of a set of items in order to determine the order in which they will be addressed."
+    },
+    {
+      "term": "Problem Domain",
+      "definition": "Problem Domain describes the area undergoing analysis and includes everything that needs to be understood in order to achieve the goal of the project.  This may include all inputs and outputs of a process, any related systems, and internal and external project stakeholders."
+    },
+    {
+      "term": "Problem Statement",
+      "definition": "A brief statement or paragraph that describes the problems in the current state and clarifies what a successful solution will look like."
+    },
+    {
+      "term": "Process",
+      "definition": "A series of steps or actions that lead to a desired result or output. A set of common tasks that creates a product, service, process or plan that will satisfy a customer or group of customers."
+    },
+    {
+      "term": "Process Improvement",
+      "definition": "Improvement approach focused on incremental changes, involves solutions to eliminate or reduce defects, costs or cycle time; leaves basic design and assumptions of a process intact."
+    },
+    {
+      "term": "Process Map",
+      "definition": "A business model that shows a business process in terms of the steps and input and output flows across multiple functions, organizations, or job roles."
+    },
+    {
+      "term": "Process Mapping",
+      "definition": "Illustrated description of how things get done, which enables participants to visualize an entire process and identify areas of strength and weaknesses. It helps reduce cycle time and defects while recognizing the value of individual contributions. A type of flowchart depicting the steps in a process and identifying responsibility for each step and key measures."
+    },
+    {
+      "term": "Process Model",
+      "definition": "A visual model or representation of the sequential flow and control logic of a set of related activities or actions."
+    },
+    {
+      "term": "Process Owner",
+      "definition": "Process owners are exactly as the name sounds - they are the responsible individuals for a specific process. For instance, in the legal department there is usually one person in charge - may be the VP of Legal - that's the process owner. There may be a Director of Marketing at your property - that's the process owner for marketing, and for the Check-in process, the process owner is typically the Front Office Manager."
+    },
+    {
+      "term": "Product",
+      "definition": "A solution or component of a solution that is the result of a project."
+    },
+    {
+      "term": "Product Backlog",
+      "definition": "Container for a set of user stories, requirements or features that have been identified as candidates for potential implementation, prioritized, and estimated."
+    },
+    {
+      "term": "Product Manager",
+      "definition": "Responsible for managing services as a product over their entire life cycle from concept to retirement through design, transition, and operation."
+    },
+    {
+      "term": "Product Owner",
+      "definition": "The role responsible for having a vision of what the business needs and conveying that vision to the development team."
+    },
+    {
+      "term": "Product Scope",
+      "definition": "The features and functions that characterize a product, service or result."
+    },
+    {
+      "term": "Project",
+      "definition": "A temporary endeavor undertaken to create a unique product, service or result."
+    },
+    {
+      "term": "Project Charter",
+      "definition": "A document issued by the project initiator or sponsor that formally authorizes the existence of a project, and provides the project manager with the authority to apply organizational resources to project activities."
+    },
+    {
+      "term": "Project Management",
+      "definition": "The process of organizing and managing resources to complete a project to specification, on time, within budget and to the customer’s satisfaction."
+    },
+    {
+      "term": "Project Manager",
+      "definition": "The stakeholder assigned by the performing organization to manage the work required to achieve the project objectives."
+    },
+    {
+      "term": "Project Scope",
+      "definition": "The work that must be performed to deliver a product, service, or result with the specified features and functions. See also scope."
+    },
+    {
+      "term": "Project Sponsor",
+      "definition": "This member of the executive committee is a strong advocate of the project and can assist with barriers that may come up. He or she is accountable for the project's success and can, therefore, explain to Six Sigma Council members and everyone in the property the business rationale for the transfer project and assist with cross-functional collaboration efforts. He or she will remain up to date on key aspects of the project by regularly meeting with the team leader and members.\nThe project sponsor:\n∙ Is a member of the Executive committee\n∙ Is accountable for project success\n∙ Address cross-functional or other barriers\n∙ Reviews and tracks progress with the team leader\n∙ Advocates for necessary resources"
+    },
+    {
+      "term": "Prototype",
+      "definition": "A partial or preliminary version of the system."
+    },
+    {
+      "term": "Pseudocode",
+      "definition": "Pseudocode is a notation that combines some of the structure of a programming language, such as IF-ELSE and DO WHILE constructs, with a natural language, such as plain English.  This allows writers of specifications to eliminate a lot of the ambiguity that typically arises when trying to describe logic and computations using strictly a natural language."
+    },
+    {
+      "term": "Quality",
+      "definition": "The degree to which a set of inherent characteristics fulfills requirements."
+    },
+    {
+      "term": "Quality Assurance",
+      "definition": "Quality Assurance is about Process.  It describes the proactive method of establishing a process that is capable of producing a product or deliverable that is error or defect-free."
+    },
+    {
+      "term": "Quality Attributes",
+      "definition": "The subset of nonfunctional requirements that describes properties of the software's operation, development, and deployment (e.g., performance, security, usability, portability, and testability)."
+    },
+    {
+      "term": "Quality Control",
+      "definition": "Quality Control is about Products or Deliverables. It describes checking a final product or deliverable to ensure that it is defect or error-free and meets specifications."
+    },
+    {
+      "term": "Questionnaire",
+      "definition": "See survey."
+    },
+    {
+      "term": "RACI Chart",
+      "definition": "See RACI Matrix"
+    },
+    {
+      "term": "RACI Matrix",
+      "definition": "A project management tool that identifies all required tasks or activities and what parties are involved in those tasks as well as their level or type of involvement. A RACI is used to ensure clarity on roles and responsibilities in a team environment. It alleviates problems and fosters a culture of accountability.\n∙ R - Responsible: The person who performs the activity; the \"doer\"\n∙ A - Accountable: The person with ultimate approval power; the \"buck stops here\"\n∙ C - Consulted: A stakeholder who is involved prior to the task completion, \"in the loop\"\n∙ I - Informed: A stakeholder who is told of the outcome of the task or decision; the \"keep in the picture\""
+    },
+    {
+      "term": "Random sampling",
+      "definition": "Method that allows each item or person chosen to be measured, to be selected completely by chance."
+    },
+    {
+      "term": "Rational Unified Process",
+      "definition": "An iterative software development process framework that adapts its processes to the development organizations and software project teams that utilize them."
+    },
+    {
+      "term": "Redundant Requirement",
+      "definition": "A requirement that appears more than once in the documentation or that may be derived in more than one way."
+    },
+    {
+      "term": "Regression Testing",
+      "definition": "Testing that is performed after making a functional improvement or repair to a program."
+    },
+    {
+      "term": "Regulator",
+      "definition": "A stakeholder with legal or governance authority over the solution or the process used to develop it."
+    },
+    {
+      "term": "Relationship",
+      "definition": "A defined association between concepts, classes or entities. Relationships are usually named and include the cardinality of the association."
+    },
+    {
+      "term": "Relationship Map",
+      "definition": "A business model that shows the organizational context in terms of the relationships that exist among the organization, external customers, and providers."
+    },
+    {
+      "term": "Repository",
+      "definition": "A real or virtual facility where all information on a specific topic is stored and is available for retrieval."
+    },
+    {
+      "term": "Request For Change (RFC)",
+      "definition": "A formal proposal for a change to be made. Includes details of the proposed change, and may be recorded on paper or electronically."
+    },
+    {
+      "term": "Request For Information (RFI)",
+      "definition": "A requirements document issued to solicit vendor input on a proposed process or product. An RFI is used when the issuing organization seeks to compare different alternatives or is uncertain regarding the available options"
+    },
+    {
+      "term": "Request For Proposal (RFP)",
+      "definition": "A requirements document issued when an organization is seeking a formal proposal from vendors. An RFP typically requires that the proposals be submitted following a specific process and using sealed bids which will be evaluated against a formal evaluation methodology."
+    },
+    {
+      "term": "Request For Quote (RFQ)",
+      "definition": "An informal solicitation of proposals from vendors."
+    },
+    {
+      "term": "Requirement",
+      "definition": "1. A condition or capability needed by a stakeholder to solve a problem or achieve an objective.\n2. A condition or capability that must be met or possessed by a solution or solution component to satisfy a contract, standard, specification or other formally imposed documents.\n3. A documented representation of a condition or capability as in 1) or 2)."
+    },
+    {
+      "term": "Requirement Attribute",
+      "definition": "Metadata related to a requirement used to assist with requirements development and management."
+    },
+    {
+      "term": "Requirement Defect",
+      "definition": "An error in requirements caused by incorrect, incomplete, missing, or conflicting requirements."
+    },
+    {
+      "term": "Requirements Allocation",
+      "definition": "The process of apportioning requirements to subsystems and components (i.e., people, hardware, and software)."
+    },
+    {
+      "term": "Requirements Analysis",
+      "definition": "Describes the activities and methods used to analyze stated requirements and transform them into a potential solution which possesses the capabilities that will fulfill the stakeholder needs."
+    },
+    {
+      "term": "Requirements Discovery Session",
+      "definition": "See requirements workshop."
+    },
+    {
+      "term": "Requirements Document",
+      "definition": "See requirements package."
+    },
+    {
+      "term": "Requirements Iteration",
+      "definition": "An iteration that defines requirements for a subset of the solution scope. For example, an iteration of requirements would include identifying a part of the overall product scope to focus upon, identifying requirements sources for that portion of the product, analyzing stakeholders and planning how to elicit requirements from them, conducting elicitation techniques, documenting the requirements, and validating the requirements."
+    },
+    {
+      "term": "Requirements Management",
+      "definition": "The activities that control requirements development, including requirements change control, requirements attributes definition, and requirements traceability."
+    },
+    {
+      "term": "Requirements Management and Communication",
+      "definition": "Describes what is involved in managing and articulating requirements to a wide variety of stakeholders.  It includes understanding the link between business or project objectives and the specific requirements that comes from them such that any change or clarification in the objectives will result in a revised set of requirements that reflect the business need."
+    },
+    {
+      "term": "Requirements Management Plan",
+      "definition": "A description of the requirements management process."
+    },
+    {
+      "term": "Requirements Management Tool",
+      "definition": "A software tool that stores requirements information in a database, captures requirements attributes and associations, and facilitates requirements reporting."
+    },
+    {
+      "term": "Requirements Model",
+      "definition": "A representation of requirements using text and diagrams. Requirements models can also be called user requirements models or analysis models and can supplement textual requirements specifications."
+    },
+    {
+      "term": "Requirements Package",
+      "definition": "A requirements package is a set of requirements grouped together in a document or presentation for communication to stakeholders."
+    },
+    {
+      "term": "Requirements Quality",
+      "definition": "See requirements validation and requirements verification."
+    },
+    {
+      "term": "Requirements Risk Mitigation Strategy",
+      "definition": "An analysis of requirements-related risks that ranks risks and identifies actions to avoid or minimize those risks."
+    },
+    {
+      "term": "Requirements Signoff",
+      "definition": "Formal approval of a set of requirements by a sponsor or other decision maker."
+    },
+    {
+      "term": "Requirements Traceability",
+      "definition": "The ability to identify and document the lineage of each requirement, including its derivation (backward traceability), its allocation (forward traceability), and its relationship to other requirements."
+    },
+    {
+      "term": "Requirements Traceability Matrix",
+      "definition": "A Requirements Traceability Matrix is a tabular format that provides the ability to follow and audit the life of a requirement, in both a forward and backward direction: from its origins, through its realization in the design and functional specifications, to its eventual development and deployment and use, and through subsequent rounds of modification and refinement."
+    },
+    {
+      "term": "Requirements Validation",
+      "definition": "The work done to ensure that the stated requirements support and are aligned with the goals and objectives of the business."
+    },
+    {
+      "term": "Requirements Verification",
+      "definition": "The work done to evaluate requirements to ensure they are defined correctly and are at an acceptable level of quality. It ensures the requirements are sufficiently defined and structured so that the solution development team can use them in the design, development, and implementation of the solution."
+    },
+    {
+      "term": "Requirements Workshop",
+      "definition": "A requirements workshop is a structured meeting in which a carefully selected group of stakeholders collaborate to define and or refine requirements under the guidance of a skilled neutral facilitator."
+    },
+    {
+      "term": "Return on Investment",
+      "definition": "A measure of the profitability of a project or investment."
+    },
+    {
+      "term": "Reverse Engineering",
+      "definition": "Work backward from the final product in order to derive its underlying analysis and design models."
+    },
+    {
+      "term": "Risk",
+      "definition": "An uncertain event or condition that, if it occurs, will affect the goals or objectives of a proposed change."
+    },
+    {
+      "term": "Risk Management",
+      "definition": "Risk management is about thinking ahead and preparing for things that may go wrong. This includes identifying potential problems and putting together preventive and contingent action plans, in order to reduce the potential damage."
+    },
+    {
+      "term": "Risk Mitigation Strategy",
+      "definition": "See requirements risk mitigation strategy."
+    },
+    {
+      "term": "Role",
+      "definition": "A role describes a related set of activities that a single person may regularly undertake in order to partially or fully complete a process or goal. A role is different than a job title. Roles, reporting structures, and other parameters may all be used in conjunction to define a job title."
+    },
+    {
+      "term": "Root Cause Analysis",
+      "definition": "Root cause analysis is a structured examination of an identified problem to understand the underlying causes."
+    },
+    {
+      "term": "RuleSpeak",
+      "definition": "RuleSpeak is a set of guidelines for expressing business rules using a natural language (such as English). RuleSpeak is not a language or syntax itself but rather a set of guidelines to facilitate the creation of business rules that are concise, consistent, and less ambiguous. RuleSpeak is fully consistent with the OMG’s SBVR standard."
+    },
+    {
+      "term": "RUP",
+      "definition": "See Rational Unified Process"
+    },
+    {
+      "term": "Scenario",
+      "definition": "An analysis model that describes a series of actions or tasks that respond to an event. Each scenario is an instance of a use case."
+    },
+    {
+      "term": "Schedule of Changes",
+      "definition": "See Change Schedule"
+    },
+    {
+      "term": "Scope",
+      "definition": "Defines the boundaries of the process; clarifies specifically where the start and end points for improvement reside (for instance, room service delivery time from the time when the guest calls to room service knocking at the guest's door); defines where and what to measure and analyze; needs to be within the sphere of control of the team working on the project. The broader the scope, the more complex and time-consuming the improvement efforts will be."
+    },
+    {
+      "term": "Scope Model",
+      "definition": "A model that defines the boundaries of a business domain or solution."
+    },
+    {
+      "term": "Scrum",
+      "definition": "Scrum is one of several light-weight agile methods that use an iterative and incremental approach for the development of information systems. The Scrum method brings a small team together to work on a specified set of features over a short period called a sprint."
+    },
+    {
+      "term": "Scrum Master",
+      "definition": "A servant leader responsible for promoting and support the team by removing impediments."
+    },
+    {
+      "term": "Secondary Actor",
+      "definition": "A secondary actor is a person, business processes, or applications that provides a specific result or information to a use case in order for the end goal of the use case to be achieved.  A secondary actor never initiates the use case.  It is invoked by the system’s use cases in order to obtain the required information or result.  There may be many secondary actors for a given system."
+    },
+    {
+      "term": "Sequence Diagram",
+      "definition": "A sequence diagram is a UML diagram that depicts interactions among various application components or participants over time, including but not limited to system objects, actors, and other systems or services, in order to accomplish a task."
+    },
+    {
+      "term": "Service",
+      "definition": "Work carried out or on behalf of others."
+    },
+    {
+      "term": "Service Desk",
+      "definition": "Often the single point of contact between the service provider and the users. Typically manages incidents and service requests."
+    },
+    {
+      "term": "Service Level Agreement (SLA)",
+      "definition": "A formal agreement between an IT service provider and a customer. Describes the IT service, documents service level targets, and specifies the responsibilities of the IT service provider and the customer."
+    },
+    {
+      "term": "Service Level Target",
+      "definition": "A specified level of service that is guaranteed in a Service Level Agreement, such as a performance target."
+    },
+    {
+      "term": "SIPOC Diagram",
+      "definition": "The SIPOC diagram is a tool that is used to outline the scope of a process improvement initiative (often as part of a Six Sigma improvement project). The tool captures all of the relevant elements of the process under consideration.  The diagram's name is an acronym for the elements that need to be identified and documented. (S) – Suppliers: Who supplies the inputs to the process under consideration, (I) – Inputs: What are the inputs to the process, (P) – Process: What are the steps of the process that is being improved upon, O – Outputs: What are the outputs of the process, C – Customers: Who are the customers or beneficiaries of the outputs of the process."
+    },
+    {
+      "term": "Six Sigma",
+      "definition": "Six Sigma is a process improvement methodology.  It is structured into 5 phases which can be iterated to continually improve key processes and deliver greater efficiencies and success within an organization.  These 5 phases are Define, Measure, Analyze, Improve, and Control."
+    },
+    {
+      "term": "SMART Goals",
+      "definition": "Acronym for goals which satisfy the SMART framework: Specific, Measurable, Attainable, Relevant, and Time-bound.\n∙ Specific - detail what is expected, why it's important, who is involved, where it will occur and which attributes are important.\n∙ Measurable - allow progress to be clearly quantified and demonstrated.\n∙ Attainable - goals that stretch the employee but can be accomplished to motivate.\n∙ Relevant - answer the question of why the activity is worthwhile.\n∙ Time-bound - establish sense of urgency by setting a deadline.\nClear, motivating, easily understood goals and result in much higher likelihood of success."
+    },
+    {
+      "term": "Software Development Life Cycle (SDLC)",
+      "definition": "A defined process for developing solutions that describe the phases (stages) of an IT project and defines activities and responsibilities."
+    },
+    {
+      "term": "Software Engineer",
+      "definition": "See developer."
+    },
+    {
+      "term": "Software/Systems Requirements Specification",
+      "definition": "A requirements document written primarily for Implementation SMEs describing functional and nonfunctional requirements."
+    },
+    {
+      "term": "Solution",
+      "definition": "A solution meets a business need by resolving a problem or allowing an organization to take advantage of an opportunity."
+    },
+    {
+      "term": "Solution Assessment and Validation",
+      "definition": "Describes the activity of determining how closely a solution meets the original stakeholder and solution requirements as well as describe the activities that the business analyst should complete to ensure the successful implementation of the solution."
+    },
+    {
+      "term": "Solution Requirement",
+      "definition": "A characteristic of a solution that meets the business and stakeholder requirements. May be subdivided into functional and non-functional requirements."
+    },
+    {
+      "term": "Solution Scope",
+      "definition": "The set of capabilities a solution must deliver in order to meet the business need. See also scope."
+    },
+    {
+      "term": "Solution statement",
+      "definition": "A clear description of the proposed solution(s); used to evaluate and select the best solution to implement."
+    },
+    {
+      "term": "Span of Control",
+      "definition": "Span of control is the number of employees a manager is directly (or indirectly) responsible for."
+    },
+    {
+      "term": "Sponsor",
+      "definition": "A stakeholder who authorizes or legitimizes the product development effort by contracting for or paying for the project."
+    },
+    {
+      "term": "Sprint",
+      "definition": "A term most often used in Agile frameworks, a set period of time (generally 1-4 weeks) during which specific work has to be completed and made ready for review"
+    },
+    {
+      "term": "Sprint Planning",
+      "definition": "Meeting to review and commit to user stories for the upcoming sprint."
+    },
+    {
+      "term": "Sprint Retrospective",
+      "definition": "A meeting done at the end of the sprint to discuss how the team can better work together in order to achieve their future sprint commitments (focuses on people and processes)"
+    },
+    {
+      "term": "Sprint Review",
+      "definition": "A meeting done at the end of the sprint to review and demo the work that was completed as part of that sprint (focuses on the product)"
+    },
+    {
+      "term": "Stakeholder",
+      "definition": "A group or person who has interests that may be affected by an initiative or influence over it."
+    },
+    {
+      "term": "Stakeholder Analysis",
+      "definition": "The work to identify the stakeholders who may be impacted by a proposed initiative and assess their interests and likely participation."
+    },
+    {
+      "term": "Stakeholder List",
+      "definition": "A listing of the stakeholders affected by a business need or proposed solution and a description of their participation in a project or other initiative."
+    },
+    {
+      "term": "Stakeholder Requirement",
+      "definition": "Stakeholder requirements are statements of the needs of a particular stakeholder or class of stakeholders. They describe the needs that a given stakeholder has and how that stakeholder will interact with a solution. Stakeholder requirements serve as a bridge between business requirements and the various categories of solution requirements."
+    },
+    {
+      "term": "State Diagram",
+      "definition": "An analysis model showing the life cycle of a data entity or class."
+    },
+    {
+      "term": "State Machine Diagram",
+      "definition": "See state diagram."
+    },
+    {
+      "term": "State Transition Diagram",
+      "definition": "See state diagram."
+    },
+    {
+      "term": "Stated Requirements",
+      "definition": "A requirement articulated by a stakeholder that has not been analyzed, verified, or validated. Stated requirements frequently reflect the desires of a stakeholder rather than the actual need."
+    },
+    {
+      "term": "Storyboard",
+      "definition": "See dialog hierarchy and dialog map."
+    },
+    {
+      "term": "Structural Rule",
+      "definition": "Structural rules determine when something is or is not true or when things fall into a certain category. They describe categorizations that may change over time."
+    },
+    {
+      "term": "Structured English",
+      "definition": "See Pseudocode"
+    },
+    {
+      "term": "Structured Walkthrough",
+      "definition": "A structured walkthrough is an organized peer review of a deliverable with the objective of finding errors and omissions. It is considered a form of quality assurance."
+    },
+    {
+      "term": "Subject Matter Expert (SME)",
+      "definition": "A stakeholder with specific expertise in an aspect of the problem domain or potential solution alternatives or components."
+    },
+    {
+      "term": "Supplier",
+      "definition": "A stakeholder who provides products or services to an organization."
+    },
+    {
+      "term": "Survey",
+      "definition": "A survey administers a set of written questions to stakeholders in order to collect responses from a large group in a relatively short period of time."
+    },
+    {
+      "term": "Swimlane",
+      "definition": "The horizontal or vertical section of a process model that shows which activities are performed by a particular actor or role."
+    },
+    {
+      "term": "SWOT Analysis",
+      "definition": "SWOT Analysis is a strategic planning technique used to assess the internal and external environment in which a company operates and competes.  Internal environmental factors are classified into strengths and weaknesses, while external environmental factors are classified into opportunities and threats."
+    },
+    {
+      "term": "System",
+      "definition": "A collection of interrelated elements that interact to achieve an objective. System elements can include hardware, software, and people. One system can be a sub-element (or subsystem) of another system."
+    },
+    {
+      "term": "System Development Life Cycle",
+      "definition": "See Software Development Life Cycle"
+    },
+    {
+      "term": "Systems Thinking",
+      "definition": "The process of understanding how things influence one another within a whole. In organizations, systems consist of people, structures and processes that work together to make an organization healthy or unhealthy."
+    },
+    {
+      "term": "Team Velocity",
+      "definition": "See Velocity"
+    },
+    {
+      "term": "Technical Constraints",
+      "definition": "Technical constraints are limitations on the design of a solution that derives from the technology used in its implementation. See also business constraint."
+    },
+    {
+      "term": "Technique",
+      "definition": "Techniques alter the way a business analysis task is performed or describe a specific form the output of a task may take."
+    },
+    {
+      "term": "Template",
+      "definition": "Standardized form used for textual documentation."
+    },
+    {
+      "term": "Temporal Event",
+      "definition": "A system trigger that is initiated by time."
+    },
+    {
+      "term": "Tester",
+      "definition": "A stakeholder responsible for assessing the quality of, and identifying defects in, a software application."
+    },
+    {
+      "term": "Throw-away Prototype",
+      "definition": "A prototype used to quickly uncover and clarify interface requirements using simple tools, sometimes just paper and pencil. Usually discarded when the final system has been developed."
+    },
+    {
+      "term": "Timebox",
+      "definition": "A fixed period of time to accomplish a desired outcome."
+    },
+    {
+      "term": "Tollgate",
+      "definition": "A review session that determines whether activities up to that point in a project have been satisfactorily completed. Tollgates are commonly conducted to review critical decisions during a project."
+    },
+    {
+      "term": "Traceability",
+      "definition": "See requirements traceability."
+    },
+    {
+      "term": "Transition Requirements",
+      "definition": "A classification of requirements that describe capabilities that the solution must have in order to facilitate the transition from the current state of the enterprise to the desired future state, but that will not be needed once that transition is complete."
+    },
+    {
+      "term": "UI Design Pattern",
+      "definition": "See User Interface Design Pattern"
+    },
+    {
+      "term": "UML",
+      "definition": "See Unified Modeling Language"
+    },
+    {
+      "term": "Unified Modeling Language",
+      "definition": "A non-proprietary modeling and specification language used to specify, visualize, and document deliverables for object-oriented software-intensive systems."
+    },
+    {
+      "term": "Usability",
+      "definition": "The ease with which an application, product, or IT service can be used."
+    },
+    {
+      "term": "Use Case",
+      "definition": "An analysis model that describes the tasks that the system will perform for actors and the goals that the system achieves for those actors along the way."
+    },
+    {
+      "term": "Use Case Diagram",
+      "definition": "A use case diagram is a UML diagram that provides a high-level graphical view of the functionality (use cases) supported by the system and shows which roles (actors) can invoke each use case.  This high-level view of the system provides a context for the readers of the more detailed use case specifications."
+    },
+    {
+      "term": "Use Case Specification",
+      "definition": "The use case specification provides the details of the functionality that the system will support and describes how the actors will use the system in order to obtain a specific result of value."
+    },
+    {
+      "term": "User",
+      "definition": "A stakeholder, person, device, or system that directly or indirectly accesses a system."
+    },
+    {
+      "term": "User Acceptance Testing",
+      "definition": "Testing done by the user or on the user's behalf prior to solution approval (sign-off). Performed after extensive testing has already occurred. The UAT may follow a formal or informal process. In a formal process, precise test scripts and expected results are designed beforehand. In an informal process, the goals of the tests are defined, but the detailed steps are not."
+    },
+    {
+      "term": "User Interface Design Patterns",
+      "definition": "User Interface Design Patterns (also commonly referred to as Interaction Design Patterns) document and convey robust UI design solutions, that have proven to be successful over time, to common usability requirements.  Properly applying UI Design Patterns ensures the UI designer that the application or website will be intuitive and its features and functionality robust."
+    },
+    {
+      "term": "User Requirement",
+      "definition": "See stakeholder requirement(s)."
+    },
+    {
+      "term": "User Requirements Document",
+      "definition": "A requirements document written for a user audience, describing user requirements and the impact of the anticipated changes on the users."
+    },
+    {
+      "term": "User Story",
+      "definition": "A high-level, informal, short description of a solution capability that provides value to a stakeholder. A user story is typically one or two sentences long and provides the minimum information necessary to allow a developer to estimate the work required to implement it."
+    },
+    {
+      "term": "Validate",
+      "definition": "Ensures the stated and documented requirements correctly and fully implement the business requirements."
+    },
+    {
+      "term": "Validated Requirements",
+      "definition": "Requirements that have been demonstrated to deliver business value and to support the business goals and objectives."
+    },
+    {
+      "term": "Validation",
+      "definition": "The process of checking a product to ensure that it satisfies its intended use and conforms to its requirements. Validation ensures that you built the correct solution. Also see requirements validation."
+    },
+    {
+      "term": "Variance",
+      "definition": "A change in a process or business practice that may alter its expected outcome."
+    },
+    {
+      "term": "Variance Analysis",
+      "definition": "Analysis of discrepancies between planned and actual performance, to determine the magnitude of those discrepancies and recommend corrective and preventative action as required."
+    },
+    {
+      "term": "Velocity",
+      "definition": "The sum of effort estimates the team was able to complete during that iteration. Used as a baseline for future iterations to understand the approximate amount of work the team can get done (helps with commitments)."
+    },
+    {
+      "term": "Verification",
+      "definition": "The process of checking that a deliverable produced at a given stage of development satisfies the conditions or specifications of the previous stage. Verification ensures that you built the solution correctly. Also see requirements verification."
+    },
+    {
+      "term": "Verified Requirements",
+      "definition": "Requirements that have been shown to demonstrate the characteristics of requirements quality and as such are cohesive, complete, consistent, correct, feasible, modifiable, unambiguous, and testable."
+    },
+    {
+      "term": "Verify",
+      "definition": "Ensures that requirements are defined clearly enough to allow solution design and implementation to begin."
+    },
+    {
+      "term": "Vertical Prototype",
+      "definition": "A prototype that dives into the details of the interface, functionality, or both."
+    },
+    {
+      "term": "View",
+      "definition": "A view organizes diagrams into logical groups to describe a particular aspect of the system.  It is the abstraction of the system organized in such a way as to give a perspective of a related set of concerns."
+    },
+    {
+      "term": "Vision Statement (product vision statement)",
+      "definition": "A brief statement or paragraph that describes the why, what, and who of the desired software product from a business point of view."
+    },
+    {
+      "term": "Voice of the Customer (VOC)",
+      "definition": "A systematic approach to gather and analyze customer requirements, expectations, level of satisfaction and dissatisfaction. Methods of gathering Voice of the Customer include complaints, surveys, comments, market research, focus groups, and interviews. Voice of the Customer should drive the process improvement or re-design efforts and is a key data source in the project selection process."
+    },
+    {
+      "term": "Walkthrough",
+      "definition": "A type of peer review in which participants present, discuss, and step through a work product to find errors. Walkthroughs of requirements documentation are used to verify the correctness of requirements. See also structured walkthrough."
+    },
+    {
+      "term": "Work in Progress (WIP)",
+      "definition": "The tasks items the team is currently working on"
+    },
+    {
+      "term": "Work Breakdown Structure (WBS)",
+      "definition": "A deliverable-oriented hierarchical decomposition of the work to be executed by the project team to accomplish the project objectives and create the required deliverables. It organizes and defines the total scope of the project."
+    },
+    {
+      "term": "Work In Progress (WIP) Limits",
+      "definition": "A core concept of Kanban, setting work in progress limits helps you to manage the amount of work that can be started. Focuses the team on what can be completed rather than just what can be started."
+    },
+    {
+      "term": "Work Product",
+      "definition": "A document or collection of notes or diagrams used by the business analyst during the requirements development process."
+    }
+  ]
+}
